@@ -35,14 +35,13 @@
 }
 
 .content .img {
-    width: 250px;
+    width: 253px;
     height: 168px;
 }
 
 .content .img-1 {
     float: left;
     margin-right: 26px;
-    margin-bottom: 24px;
 }
 
 .content p {
@@ -50,9 +49,13 @@
     line-height: 23px;
 }
 
+.content .paragraph-2 {
+    margin-top: 23px;
+}
+
 .content .img-2 {
     margin-left: 26px;
-    margin-bottom: 10px;
+    margin-top: 16px;
     float: right;
 }
 

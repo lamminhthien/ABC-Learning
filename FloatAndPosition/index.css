@@ -18,8 +18,9 @@ body {
 .header>li {
     list-style-type: none;
     float: left;
-    padding: 6px;
+    padding: 10px;
     background: #dddddd;
+    border-right: 1px solid #CCC;
 }
 
 .header::after {
@@ -80,7 +81,7 @@ body {
     margin-right: -9px;
 }
 
-.list>h1 {
+.list > h2 {
     text-align: center;
 }
 
@@ -89,33 +90,44 @@ body {
     float: left;
     padding-left: 9px;
     padding-right: 9px;
+    position: relative;
+    top: -5%;
 }
 
 .card-group .inner {
+    position: relative;
+    bottom: 40%;
     border: 1px solid #DFE3E7;
+    height: 250px;
+
 }
 
-
+.card h2 {
+    position: relative;
+    left: 4%;
+    top: -6%;
+}
 
 .card p {
-    margin-left: 5%;
-    margin-bottom: 30%;
+    position: relative;
+    left: 4%;
+    top: -8%
+
+
 }
 
-.card>h1 {
-    margin-top: 5%;
-    margin-left: 5%;
-    height: 21.333px;
-}
 
-.card>button {
+.card button {
+    position: relative;
+    top: 30%;
     background-color: #466ccb;
     border: none;
     color: white;
     text-align: center;
     width: 100%;
     padding: 4%;
-    font-size: medium;
+    font-size: larger;
+
 }
 
 /* .card-group > .card:not(:first-child):not(:last-child) {

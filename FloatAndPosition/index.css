@@ -1,114 +1,131 @@
- body {
-     margin-top: 20px;
-     margin: auto;
-     width: 1500px;
-     padding: 10px;
- }
-
- /* Các định dạng liên quan header và menu */
- .header {
-     display: block;
-     background: #cccccc;
- }
-
- .header>li {
-     list-style-type: none;
-     float: left;
-     padding: 6px;
-     background: #dddddd;
- }
-
- .header::after {
-     content: "";
-     display: block;
-     clear: both;
- }
-
-
- /* Định dạng văn bản và ảnh phần trên */
- .content-first>.img-1 {
-     float: left;
-     width: 300px;
-     padding-right: 20px;
-     padding-bottom: 20px;
- }
-
-
- .content-first>p {
-     text-align: justify;
-     word-spacing: 5px;
-     line-height: 20px;
- }
-
- .content-first::after {
-     content: "";
-     display: block;
-     clear: both;
- }
-
- /* Kết thúc định dạng văn bản và ảnh phần trên */
-
- /* Định dạng văn bản và ảnh phần dưới  */
-
- .content-second>.img-2 {
-     width: 300px;
-     padding-left: 20px;
-     float: right;
- }
-
- .content-second>p {
-     text-align: justify;
-     word-spacing: 5px;
-     line-height: 20px;
- }
-
- .content-second::after {
-     content: "";
-     display: block;
-     clear: both;
- }
-
- /*Kết thúc định dạng văn bản và ảnh phần dưới  */
-
- /* Tiêu đề list và 4 Card  */
-.card-group {
-    display: block;
+* {
+    box-sizing: border-box
 }
 
- .list > h1 {
-     text-align: center;
- }
+body {
+    margin-top: 20px;
+    margin: auto;
+    width: 1500px;
+    padding: 10px;
+}
 
- .card-group > .card {
-    width: 20%;
+/* Các định dạng liên quan header và menu */
+.header {
+    display: block;
+    background: #cccccc;
+}
+
+.header>li {
+    list-style-type: none;
     float: left;
-    border-style: solid;
-    border-width: 1px;
- }
+    padding: 6px;
+    background: #dddddd;
+}
 
- .card > p {
+.header::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+/* Định dạng văn bản và ảnh phần trên */
+.content-first>.img-1 {
+    float: left;
+    width: 300px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+
+.content-first>p {
+    text-align: justify;
+    word-spacing: 5px;
+    line-height: 20px;
+}
+
+.content-first::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* Kết thúc định dạng văn bản và ảnh phần trên */
+
+/* Định dạng văn bản và ảnh phần dưới  */
+
+.content-second>.img-2 {
+    width: 300px;
+    padding-left: 20px;
+    float: right;
+}
+
+.content-second>p {
+    text-align: justify;
+    word-spacing: 5px;
+    line-height: 20px;
+}
+
+.content-second::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/*Kết thúc định dạng văn bản và ảnh phần dưới  */
+
+/* Tiêu đề list và 4 Card  */
+.card-group {
+    margin-left: -9px;
+    margin-right: -9px;
+}
+
+.list>h1 {
+    text-align: center;
+}
+
+.card-group>.card {
+    width: 25%;
+    float: left;
+    padding-left: 9px;
+    padding-right: 9px;
+}
+
+.card-group .inner {
+    border: 1px solid #DFE3E7;
+}
+
+
+
+.card p {
     margin-left: 5%;
     margin-bottom: 30%;
- }
-
-.card > h1 {
-  margin-top: 5%;
-  margin-left: 5%;
-  height: 21.333px;
 }
 
- .card > button {
-     background-color: #4CAF50;
-     border: none;
-     color: white;
-     text-align: center;
-     width: 100%;
-     padding: 4%;
-     font-size: medium;
- }
+.card>h1 {
+    margin-top: 5%;
+    margin-left: 5%;
+    height: 21.333px;
+}
 
- .card-group > .card:not(:first-child):not(:last-child) {
-     margin-left: 6%;
-     margin-right: 6%;
+.card>button {
+    background-color: #466ccb;
+    border: none;
+    color: white;
+    text-align: center;
+    width: 100%;
+    padding: 4%;
+    font-size: medium;
+}
 
- }
+/* .card-group > .card:not(:first-child):not(:last-child) {
+     margin-left: 3%;
+     margin-right: 3%;
+
+ } */
+
+.card-group::after {
+    content: "";
+    display: block;
+    clear: both;
+}

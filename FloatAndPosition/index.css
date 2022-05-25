@@ -1,0 +1,53 @@
+ .header {
+     display: block;
+     background: #cccccc;
+ }
+ 
+ .header > li {
+     list-style-type: none;
+     float: left;
+     padding: 6px;
+     background: #dddddd;
+ }
+  .header::after {
+      content: "";
+      display: block;
+      clear: both;
+  }
+/* Định dạng văn bản và ảnh phần trên */
+.content-first > .img-1 {
+    float: left;
+    width: 300px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+
+.content-first > p {
+    text-align: justify;
+    word-spacing: 5px;
+    line-height: 20px;
+}
+
+/* Định dạng văn bản và ảnh phần dưới  */
+
+.content-second > .img-2 {
+    width: 300px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    float: right;
+}
+
+.content-second > p {
+    text-align: justify;
+    word-spacing: 5px;
+    line-height: 20px;
+}
+ 
+
+ body {
+    margin-top: 20px;
+    margin:  auto; 
+    width: 1500px;
+    padding: 10px;
+ }

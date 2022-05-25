@@ -1,3 +1,4 @@
+ /* Các định dạng liên quan header và menu */
  .header {
      display: block;
      background: #cccccc;
@@ -14,6 +15,8 @@
       display: block;
       clear: both;
   }
+
+
 /* Định dạng văn bản và ảnh phần trên */
 .content-first > .img-1 {
     float: left;
@@ -29,12 +32,18 @@
     line-height: 20px;
 }
 
+.content-first::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+/* Kết thúc định dạng văn bản và ảnh phần trên */
+
 /* Định dạng văn bản và ảnh phần dưới  */
 
 .content-second > .img-2 {
     width: 300px;
     padding-left: 20px;
-    padding-bottom: 20px;
     float: right;
 }
 
@@ -42,6 +51,12 @@
     text-align: justify;
     word-spacing: 5px;
     line-height: 20px;
+}
+
+.content-second::after {
+    content: "";
+    display: block;
+    clear: both;
 }
  
 

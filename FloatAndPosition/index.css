@@ -104,4 +104,11 @@
      text-align: center;
      width: 100%;
      padding: 4%;
+     font-size: medium;
+ }
+
+ .card-group > .card:not(:first-child):not(:last-child) {
+     margin-left: 6%;
+     margin-right: 6%;
+
  }

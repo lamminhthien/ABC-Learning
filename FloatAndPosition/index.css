@@ -80,6 +80,28 @@
  }
 
  .card-group > .card {
-    width: 375px;
+    width: 20%;
     float: left;
+    border-style: solid;
+    border-width: 1px;
+ }
+
+ .card > p {
+    margin-left: 5%;
+    margin-bottom: 30%;
+ }
+
+.card > h1 {
+  margin-top: 5%;
+  margin-left: 5%;
+  height: 21.333px;
+}
+
+ .card > button {
+     background-color: #4CAF50;
+     border: none;
+     color: white;
+     text-align: center;
+     width: 100%;
+     padding: 4%;
  }

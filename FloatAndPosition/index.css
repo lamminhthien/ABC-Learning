@@ -93,10 +93,11 @@
 .list .inner h1 {
     font-size: 22px;
     margin-left: 19px;
-    margin-bottom: 6.74px;
 }
 
 .list .inner p {
+    padding-right: 50px;
+    margin-top: -9px;
     margin-left: 19px;
     line-height: 23px;
 }

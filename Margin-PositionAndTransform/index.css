@@ -1,6 +1,87 @@
-.content {
-    border: 1px solid #4CAF50;
-    width: 371px;
-    height: 140px;
-    margin: 15%;
+/* Container */
+.container {
+    box-sizing: border-box;
 }
+
+.container .area-1, .area-2 {
+    border: 1px solid #4CAF50;
+    width: 636px;
+    height: 83px;
+    /*top right bottom left */
+    margin: 18px auto;
+    border: 1px solid #B6D4FE;
+    border-radius: 6px;
+    background: #CFE3FF;
+}
+
+.container .area-1 .block-1 {
+    background: #777;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    margin-top: 15px ;
+}
+
+
+.container .area-2 .block-group {
+    position: relative;
+    width: 33%;
+    height: 60%;
+    background-color: #4CAF50;
+    margin: 0 auto;
+    margin-top:15px
+}
+
+.container .area-2 .block-2 {
+    position: absolute;
+    left: 0px;
+    float: left;
+    background-color: #777;
+    width: 50px;
+    height: 50px;
+}
+
+.container .area-2 .block-3 {
+    position: absolute;
+    left:37%;
+    float: left;
+    background-color: #777;
+    width: 50px;
+    height: 50px;
+}
+
+.container .area-2 .block-4 {
+    position: absolute;
+    right: 0px;
+    float: left;
+    background-color: #777;
+    width: 50px;
+    height: 50px;
+}
+
+
+
+/* .container .block-group .block-2 {
+    float: left;
+    margin-right: 20px;
+} */
+
+
+.clearfix::after {
+    display: block;
+    content: "";
+    clear: both;
+
+
+}
+
+/* .area .block {
+    position: absolute;
+    top:200px;
+    left: 200px;
+    right: 200px;
+    bottom: ;
+    background: #777;
+    width: 50px;
+    height: 50px;
+} */

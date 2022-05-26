@@ -1,12 +1,10 @@
 * {
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
-
-
 }
 /* Container */
 .container {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
     margin: 24px auto 0 auto;
     width: 1296px;
 }
@@ -17,7 +15,9 @@
 }
 
 .header li {
-    padding: 15px;
+    /* top:20 right:17 bottom:17 left:17  */
+     /*padding : top:  left-16px-top */ 
+    padding: 12px 17px 14px 17px;
     list-style-type: none;
     float: left;
     border-right: 1px solid #CCC
@@ -74,8 +74,7 @@
     margin-right: -10px;
 }
 
-.card-group .card {
-    position: relative;
+.list .card-group .card {
     float: left;
     border: 1px solid #DEE2E6;
     width: 23.6%;
@@ -86,18 +85,22 @@
 
 /* Inner */
 
-.inner h1 {
+.list .inner {
+    position: relative;
+}
+
+.list .inner h1 {
     font-size: 22px;
     margin-left: 19px;
     margin-bottom: 6.74px;
 }
 
-.inner p {
+.list .inner p {
     margin-left: 19px;
     line-height: 23px;
 }
 
-.inner button {
+.list .inner button {
     position: absolute;
     width: 100%;
     border: none;
@@ -105,7 +108,7 @@
     color: white;
     padding-top: 14px;
     padding-bottom: 14px;
-    bottom: 0px;
+    top:186px
     
 }
 

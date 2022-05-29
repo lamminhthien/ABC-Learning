@@ -1,18 +1,27 @@
-$desktop_resolution: 768px;
+$tablet_resolution: 768px;
+$desktop_resolution: 992px;
 
 .div-1 {
-    width: 100%;
-    height: 100%;
-    &::before {
-        content: "Mobile";
-        background: radial-gradient(circle, rgba(255, 255, 0, .6), rgba(255, 255, 0, .3));
+    // Mobile
+    width: 417px;
+    height: 191px;
+    background: radial-gradient(circle, rgba(255, 255, 0, .6), rgba(255, 255, 0, .3));
 
-        @media (min-width: $desktop_resolution) {
-            content: "Desktop";
-            background: rgb(2, 0, 36);
-            background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(4, 3, 66, 1) 0%, rgba(9, 9, 121, 1) 16%, rgba(4, 123, 197, 1) 54%, rgba(0, 212, 255, 1) 78%);
-        }
+    // Tablet
+    @media only screen and (min-width: $tablet_resolution) {
+        width: 696px;
+        height: 280px;
+        background: rgb(2, 0, 36);
+        background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(4, 3, 66, 1) 0%,
+                rgba(9, 9, 121, 1) 16%, rgba(4, 123, 197, 1) 54%,
+                rgba(0, 212, 255, 1) 78%);
     }
 
-
+    // Desktop 
+    @media only screen and (min-width: $desktop_resolution) {
+        width: 1297px;
+        height: 521px;
+        background: rgb(34,193,195);
+        background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%); 
+    }
 }

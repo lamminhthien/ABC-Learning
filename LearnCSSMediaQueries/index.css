@@ -1,16 +1,22 @@
 .div-1 {
-  width: 100%;
-  height: 100%;
-}
-.div-1::before {
-  content: "Mobile";
+  width: 417px;
+  height: 191px;
   background: radial-gradient(circle, rgba(255, 255, 0, 0.6), rgba(255, 255, 0, 0.3));
 }
-@media (min-width: 768px) {
-  .div-1::before {
-    content: "Desktop";
+@media only screen and (min-width: 768px) {
+  .div-1 {
+    width: 696px;
+    height: 280px;
     background: rgb(2, 0, 36);
     background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(4, 3, 66) 0%, rgb(9, 9, 121) 16%, rgb(4, 123, 197) 54%, rgb(0, 212, 255) 78%);
+  }
+}
+@media only screen and (min-width: 992px) {
+  .div-1 {
+    width: 1297px;
+    height: 521px;
+    background: rgb(34, 193, 195);
+    background: linear-gradient(0deg, rgb(34, 193, 195) 0%, rgb(253, 187, 45) 100%);
   }
 }
 

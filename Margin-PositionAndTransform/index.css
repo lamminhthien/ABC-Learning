@@ -1,108 +1,64 @@
-/* Container */
-.container {
+* {
     box-sizing: border-box;
 }
 
-.container .area-1, .area-2 {
-    border: 1px solid #4CAF50;
-    width: 636px;
-    height: 83px;
-    /*top right bottom left */
-    margin: 18px auto;
-    border: 1px solid #B6D4FE;
-    border-radius: 6px;
-    background: #CFE3FF;
-}
-
-.container .area-1 .block-1 {
-    background: #777;
-    border-radius: 6px;
-    width: 50px;
-    height: 50px;
-    margin: 0 auto;
-    margin-top: 15px ;
-}
-
-
-.container .area-2 .block-group {
-    position: relative;
-    width: 33%;
-    height: 60%;
-    margin: 0 auto;
-    margin-top:15px
-}
-
-.container .area-2 .block-2 {
-    position: absolute;
-    left: 0px;
-    float: left;
-    background-color: #777;
-    border-radius: 6px;
-    width: 50px;
-    height: 50px;
-}
-
-.container .area-2 .block-3 {
-    position: absolute;
-    left:37%;
-    float: left;
-    background-color: #777;
-    border-radius: 6px;
-    width: 50px;
-    height: 50px;
-}
-
-.container .area-2 .block-4 {
-    position: absolute;
-    right: 0px;
-    float: left;
-    background-color: #777;
-    border-radius: 6px;
-    width: 50px;
-    height: 50px;
-}
-
-.container .area-3 {
-    width: 636px;
-    height: 140px;
-    background: #CFE3FF;
-    margin:0 auto;
-    border: 1px solid #B6D4FE;
-    border-radius: 6px;
-}
-
-.container .area-3 .block-5 {
-    background-color: #777;
-    border-radius: 6px;
-    width: 50px;
-    height: 50px;
+.container {
+    width: 1295px;
     margin: auto;
-    transform: translateY(43px);
+}
+
+.area {
+    border-radius: 6px;
+    border: 1px solid #B6D4FE;
+    background-color: #D0E3FF;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    
+}
+
+.float-left {
+    float: left;
+}
+
+.mt-20px {
+    margin-top: 20px;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.my-auto {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.my-20px {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.block {
+    width: 50px;
+    height: 50px;
+    background-color: #767677;
+    border-radius: 6px;
+}
+
+.block-group {
+    width: 212px;
+    background-color: aqua;
+    margin: auto;
 }
 
 
-
-/* .container .block-group .block-2 {
-    float: left;
-    margin-right: 20px;
-} */
-
+.block2 {
+    margin: 10px;
+}
 
 .clearfix::after {
-    display: block;
     content: "";
     clear: both;
-
-
+    display: table;
 }
-
-/* .area .block {
-    position: absolute;
-    top:200px;
-    left: 200px;
-    right: 200px;
-    bottom: ;
-    background: #777;
-    width: 50px;
-    height: 50px;
-} */

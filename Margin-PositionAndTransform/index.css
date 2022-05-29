@@ -7,11 +7,17 @@
     margin: auto;
 }
 
-.area {
-    position: relative;
+.area-background-border {
     border-radius: 6px;
     border: 1px solid #B6D4FE;
     background-color: #D0E3FF;
+}
+
+.relative {
+    position: relative;
+}
+
+.area {
     height: 100px;
 }
 
@@ -22,8 +28,6 @@
 .mt-20px {
     margin-top: 20px;
 }
-
-
 
 .block {
     width: 50px;
@@ -37,7 +41,6 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-
 }
 
 .block2 {
@@ -45,9 +48,7 @@
 }
 
 .area-3 {
-    position: relative;
     height: 175px;
-    background-color: #D0E3FF;
 }
 
 .clearfix::after {

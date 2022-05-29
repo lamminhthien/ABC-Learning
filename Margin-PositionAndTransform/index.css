@@ -8,6 +8,7 @@
 }
 
 .area {
+    position: relative;
     border-radius: 6px;
     border: 1px solid #B6D4FE;
     background-color: #D0E3FF;
@@ -24,15 +25,8 @@
     margin-top: 20px;
 }
 
-.mx-auto {
-    margin-left: auto;
-    margin-right: auto;
-}
 
-.my-auto {
-    margin-top: auto;
-    margin-bottom: auto;
-}
+
 
 .my-20px {
     margin-top: 20px;
@@ -46,10 +40,12 @@
     border-radius: 6px;
 }
 
-.block-group {
-    width: 212px;
-    background-color: aqua;
-    margin: auto;
+.block-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
 }
 
 

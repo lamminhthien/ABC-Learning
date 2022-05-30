@@ -3,8 +3,13 @@ $tablet_resolution: 768px;
 $desktop_resolution: 992px;
 
 @font-face {
-    font-family: BadSript;
-    src: url(./assets/BadScript-Regular.ttf);
+    font-family: BadScript;
+    src: url(./assets/Fonts/BadScript-Regular.ttf);
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(./assets/Fonts/Roboto-Medium.ttf);
 }
 
 
@@ -24,43 +29,107 @@ $desktop_resolution: 992px;
     background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
 
 }
+
 .mt-auto {
     margin: auto;
 }
 
-img {
-    width: inherit;
-    height: inherit;
-    border-radius: 5px;
+.mt-20px {
+    margin-top: 25px;
+}
+
+.mt-15px {
+    margin-top: 15px;
+}
+
+
+
+.float-left {
+    float: left;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
 }
 
 .container {
+
+    // Mobile
+    .div-1 {
+        width: 417px;
+        height: 191px;
+        img {
+            width: inherit;
+            height: inherit;
+            border-radius: 15px;
+        }
+    }
+
+    .div-2 {
+        width: 417px;
+        img {
+            width: inherit;
+            height: inherit;
+            border-radius: 15px;
+        }
+    }
+
     // Tablet
     @media only screen and (min-width: $tablet_resolution) {
-        
+        .div-1 {
+            width: 696px;
+            height: 280px;
+            img {
+                width: inherit;
+                height: inherit;
+                border-radius: 15px;
+            }
+        }
     }
 
     // Desktop
     @media only screen and (min-width: $desktop_resolution) {
-        
-    }
-}
+        .div-1 {
+            width: 1297px;
+            height: 521px;
+        }
 
+        .div-2 {
+            width: 1297px;
+            margin: 20px auto 27px;
 
-.div-1 {
-    // Mobile
-    width: 417px;
-    height: 191px;
+            .title {
+                width: fit-content;
+                margin: auto;
+                font-family: Roboto;
+                font-size: larger;
+            }
+        }
 
-    // Tablet
-    @media only screen and (min-width: $tablet_resolution) {
-        width: 696px;
-        height: 280px;
-    }
+        .div-3 {
+            width: fit-content;
+            .div-left {
+                width: 964px;
+                height: 909px;
+                background-color: #FA8BFF;
+                background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
+                margin-right: 18px;
+                .content-1 {
+                    font-family: BadScript;
+                    font-size: x-large;
+                }
+            }
 
-    // Desktop 
-    @media only screen and (min-width: $desktop_resolution) {
-        width: 1297px;
-        height: 521px;
+            .div-right {
+                width: 306px;
+                height: 909px;
+                img {
+                    border-radius: 5px;
+                    height: 203px;
+                }
+            }
+        }
     }
 }

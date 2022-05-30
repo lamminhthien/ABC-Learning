@@ -146,7 +146,7 @@ $desktop_resolution: 992px;
                 }
 
                 form {
-                    margin-top: 25px;
+                    margin-top: 15px;
                     font-family: Roboto;
 
                     textarea {
@@ -159,6 +159,8 @@ $desktop_resolution: 992px;
                     .input-1 {
                         margin-top: 17px;
                         margin-bottom: 17px;
+                        padding: 7px;
+                        font-size: 15px;
                         min-width: -moz-available;
                         min-width: -webkit-fill-available;
                         min-width: fill-available;
@@ -174,6 +176,8 @@ $desktop_resolution: 992px;
                         min-width: -moz-available;
                         min-width: -webkit-fill-available;
                         min-width: fill-available;
+                        padding-top: 10px;
+                        padding-bottom: 10px;
                     }
                 }
             }

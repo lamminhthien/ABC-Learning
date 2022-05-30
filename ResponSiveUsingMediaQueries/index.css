@@ -102,7 +102,7 @@
     height: 203px;
   }
   .container .div-3 .div-right form {
-    margin-top: 25px;
+    margin-top: 15px;
     font-family: Roboto;
   }
   .container .div-3 .div-right form textarea {
@@ -114,6 +114,8 @@
   .container .div-3 .div-right form .input-1 {
     margin-top: 17px;
     margin-bottom: 17px;
+    padding: 7px;
+    font-size: 15px;
     min-width: -moz-available;
     min-width: -webkit-fill-available;
     min-width: fill-available;
@@ -126,6 +128,8 @@
     min-width: -moz-available;
     min-width: -webkit-fill-available;
     min-width: fill-available;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }
 

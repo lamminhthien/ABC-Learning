@@ -80,7 +80,7 @@
     height: 1109px;
     background-color: #FA8BFF;
     background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
-    margin-right: 26px;
+    margin-right: 23px;
   }
   .container .div-3 .div-left .content-1 {
     font-family: BadScript;
@@ -101,8 +101,31 @@
     border-radius: 5px;
     height: 203px;
   }
+  .container .div-3 .div-right form {
+    margin-top: 25px;
+    font-family: Roboto;
+  }
   .container .div-3 .div-right form textarea {
-    width: inherit;
+    min-width: -moz-available;
+    min-width: -webkit-fill-available;
+    min-width: fill-available;
+    height: 160px;
+  }
+  .container .div-3 .div-right form .input-1 {
+    margin-top: 17px;
+    margin-bottom: 17px;
+    min-width: -moz-available;
+    min-width: -webkit-fill-available;
+    min-width: fill-available;
+  }
+  .container .div-3 .div-right form .input-2 {
+    margin-top: 17px;
+  }
+  .container .div-3 .div-right form .input-3 {
+    margin-top: 17px;
+    min-width: -moz-available;
+    min-width: -webkit-fill-available;
+    min-width: fill-available;
   }
 }
 

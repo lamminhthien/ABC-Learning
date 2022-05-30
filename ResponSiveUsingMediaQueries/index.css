@@ -1,3 +1,7 @@
+@font-face {
+  font-family: BadSript;
+  src: url(./assets/BadScript-Regular.ttf);
+}
 .mt-auto {
   margin: auto;
 }

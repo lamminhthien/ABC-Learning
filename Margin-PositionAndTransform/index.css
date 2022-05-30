@@ -7,18 +7,8 @@
     margin: auto;
 }
 
-.area-background-border {
-    border-radius: 6px;
-    border: 1px solid #B6D4FE;
-    background-color: #D0E3FF;
-}
-
 .relative {
     position: relative;
-}
-
-.area {
-    height: 100px;
 }
 
 .float-left {
@@ -28,6 +18,21 @@
 .mt-20px {
     margin-top: 20px;
 }
+
+.area-background-border {
+    border-radius: 6px;
+    border: 1px solid #B6D4FE;
+    background-color: #D0E3FF;
+}
+
+.area {
+    height: 84px;
+}
+
+.area-3 {
+    height: 140px;
+}
+
 
 .block {
     width: 50px;
@@ -47,9 +52,6 @@
     margin: 10px;
 }
 
-.area-3 {
-    height: 175px;
-}
 
 .clearfix::after {
     content: "";

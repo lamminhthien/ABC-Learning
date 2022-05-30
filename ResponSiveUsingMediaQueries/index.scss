@@ -2,6 +2,11 @@
 $tablet_resolution: 768px;
 $desktop_resolution: 992px;
 
+@font-face {
+    font-family: BadSript;
+    src: url(./assets/BadScript-Regular.ttf);
+}
+
 
 @mixin desktop_bg {
     background: rgb(34, 193, 195);

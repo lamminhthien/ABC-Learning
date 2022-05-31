@@ -18,6 +18,12 @@
   width: 100%;
 }
 
+@media only screen and (max-width: 767px) {
+  .img-right {
+    margin-left: 13px;
+  }
+}
+
 .container {
   width: 477px;
   margin-top: 26px;
@@ -131,7 +137,7 @@
     font-size: x-large;
     line-height: 36px;
     font-style: italic;
-    margin-top: -23px;
+    margin-top: -42px;
   }
   .container .div-3 .div-left .content-2 {
     font-family: Roboto;
@@ -215,7 +221,7 @@
     font-size: x-large;
     line-height: 36px;
     font-style: italic;
-    margin-top: -23px;
+    margin-top: -39px;
   }
   .container .div-3 .div-left .content-2 {
     font-family: Roboto;

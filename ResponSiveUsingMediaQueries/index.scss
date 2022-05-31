@@ -37,12 +37,12 @@ $desktop_resolution: 1308px;
     font-size: medium;
 }
 
-@mixin content-1-style {
+@mixin content-1-style($margin-top) {
     font-family: BadScript;
     font-size: x-large;
     line-height: 36px;
     font-style: italic;
-    margin-top: -23px
+    margin-top: $margin-top;
 }
 
 @mixin content-2-style {
@@ -98,6 +98,12 @@ $desktop_resolution: 1308px;
     width: 100%;
 }
 
+.img-right {
+    @media only screen and (max-width:767px) {
+        margin-left: 13px;
+    }
+}
+
 // Mobile
 .container {
     @include container-style(477px, 26px);
@@ -127,7 +133,7 @@ $desktop_resolution: 1308px;
             margin-right: 26px;
 
             .content-1 {
-                @include content-1-style();
+                @include content-1-style(-23px);
             }
 
             .content-2 {
@@ -192,7 +198,7 @@ $desktop_resolution: 1308px;
                 margin-right: 26px;
 
                 .content-1 {
-                    @include content-1-style();
+                    @include content-1-style(-42px);
                 }
 
                 .content-2 {
@@ -259,7 +265,7 @@ $desktop_resolution: 1308px;
                 margin-right: 23px;
 
                 .content-1 {
-                    @include content-1-style();
+                    @include content-1-style(-39px);
                 }
 
                 .content-2 {

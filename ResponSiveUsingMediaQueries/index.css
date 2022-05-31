@@ -41,23 +41,86 @@
   .container .div-1 {
     width: 696px;
     height: 280px;
-    margin-bottom: 34px;
-  }
-  .container .div-1 img {
-    width: inherit;
-    height: inherit;
-    border-radius: 15px;
   }
   .container .div-2 {
-    margin-bottom: 34px;
+    width: 696px;
+    margin: 20px auto 27px;
   }
   .container .div-2 .title {
     width: fit-content;
     margin: auto;
     font-family: Roboto;
+    font-size: larger;
   }
-  .container .div-3 .div-left .content-1 p {
-    margin: 0px;
+  .container .div-3 {
+    width: 696px;
+    background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+  }
+  .container .div-3 .div-left {
+    width: 450px;
+    height: 1109px;
+    background-color: #FA8BFF;
+    background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
+    margin-right: 26px;
+  }
+  .container .div-3 .div-left .content-1 {
+    font-family: BadScript;
+    font-size: x-large;
+    line-height: 36px;
+    font-style: italic;
+    margin-top: -23px;
+  }
+  .container .div-3 .div-left .content-2 {
+    font-family: Roboto;
+    line-height: 26px;
+  }
+  .container .div-3 .div-right {
+    width: 218px;
+    height: 909px;
+  }
+  .container .div-3 .div-right img {
+    border-radius: 5px;
+    height: 145px;
+  }
+  .container .div-3 .div-right form {
+    margin-top: 16px;
+    font-family: Roboto;
+  }
+  .container .div-3 .div-right form textarea {
+    min-width: -moz-available;
+    min-width: -webkit-fill-available;
+    min-width: fill-available;
+    height: 152px;
+  }
+  .container .div-3 .div-right form .input-1 {
+    margin-top: 15px;
+    margin-bottom: 18px;
+    padding: 7px;
+    font-size: 15px;
+    min-width: -moz-available;
+    min-width: -webkit-fill-available;
+    min-width: fill-available;
+    border: 1px solid;
+    border-color: #D0D6DB;
+  }
+  .container .div-3 .div-right form .input-2 {
+    margin-top: 11px;
+    border: 1px solid;
+    border-color: #D0D6DB;
+  }
+  .container .div-3 .div-right form .input-3 {
+    margin-top: 12px;
+    min-width: -moz-available;
+    min-width: -webkit-fill-available;
+    min-width: fill-available;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #6C757D;
+    color: white;
+    font-family: Roboto;
+    font-size: medium;
+    border: 1px solid #6C757D;
+    border-radius: 5px;
   }
 }
 @media only screen and (min-width: 992px) {
@@ -142,6 +205,8 @@
     color: white;
     font-family: Roboto;
     font-size: medium;
+    border: 1px solid #6C757D;
+    border-radius: 5px;
   }
 }
 

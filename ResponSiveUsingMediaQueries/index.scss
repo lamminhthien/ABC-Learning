@@ -70,14 +70,13 @@ $desktop_resolution: 992px;
         width: 477px;
         margin-left: auto;
         margin-right: auto;
-        margin-top: -6px;
+        margin-top: 2px;
 
         .title {
             width: fit-content;
             margin: auto;
             font-family: Roboto;
-            font-size: smaller;
-            
+            font-size: medium;            
         }
     }
 
@@ -105,7 +104,7 @@ $desktop_resolution: 992px;
 
         .div-right {
             width: 477px;
-
+            margin-top: -16px;
             img {
                 border-radius: 5px;
                 height: 153px;
@@ -126,8 +125,8 @@ $desktop_resolution: 992px;
                 }
 
                 .input-1 {
-                    margin-top: 15px;
-                    margin-bottom: 18px;
+                    margin-top: 10px;
+                    margin-bottom: 19px;
                     padding: 7px;
                     font-size: 15px;
                     min-width: -moz-available;
@@ -135,6 +134,7 @@ $desktop_resolution: 992px;
                     min-width: fill-available;
                     border: 1px solid;
                     border-color: #D0D6DB;
+                    border-radius: 4px;
 
                 }
 
@@ -142,6 +142,7 @@ $desktop_resolution: 992px;
                     margin-top: 11px;
                     border: 1px solid;
                     border-color: #D0D6DB;
+                    border-radius: 4px;
                 }
 
                 .input-3 {
@@ -189,8 +190,6 @@ $desktop_resolution: 992px;
                 @include float-left();
                 width: 450px;
                 height: 1109px;
-                background-color: #FA8BFF;
-                background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
                 margin-right: 26px;
 
                 .content-1 {
@@ -287,13 +286,10 @@ $desktop_resolution: 992px;
 
         .div-3 {
             width: 1297px;
-            background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
 
             .div-left {
                 width: 964px;
                 height: 1109px;
-                background-color: #FA8BFF;
-                background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
                 margin-right: 23px;
 
                 .content-1 {

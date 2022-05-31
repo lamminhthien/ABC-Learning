@@ -2,8 +2,16 @@
 $tablet_resolution: 768px;
 $desktop_resolution: 1308px;
 
+.m-auto {
+    margin: auto;
+}
+
+.mt-25px {
+    margin-top: 25px;
+}
+
 @font-face {
-    font-family: BadScript; 
+    font-family: BadScript;
     src: url(./assets/Fonts/BadScript-Regular.ttf);
 }
 
@@ -16,6 +24,11 @@ $desktop_resolution: 1308px;
     min-width: -moz-available;
     min-width: -webkit-fill-available;
     min-width: fill-available;
+}
+
+@mixin container-style($width, $margin-top) {
+    width: $width;
+    margin-top: $margin-top;
 }
 
 @mixin title-style {
@@ -32,39 +45,48 @@ $desktop_resolution: 1308px;
     margin-top: -23px
 }
 
-@mixin  form-style  {
+@mixin content-2-style {
+    font-family: Roboto;
+    line-height: 26px;
+}
+
+@mixin form-style {
     margin-top: 16px;
     font-family: Roboto;
-}
-
-@mixin input-style {
-    margin-top: 11px;
-    border: 1px solid;
-    border-color: #D0D6DB;
-    border-radius: 4px;
-}
-
-.m-auto {
-    margin: auto;
-}
-
-.mt-25px {
-    margin-top: 25px;
 }
 
 @mixin float-left() {
     float: left;
 }
 
-@mixin content-2-style {
-    font-family: Roboto;
-    line-height: 26px;
+@mixin input-1-style() {
+    margin-top: 10px;
+    margin-bottom: 19px;
+    padding: 7px;
+    font-size: 15px;
+    @include min-width-div();
+    border: 1px solid;
+    border-color: #D0D6DB;
+    border-radius: 4px;
 }
 
-@mixin input-2-style {
+@mixin input-2-style($margin-top) {
     margin-top: 11px;
     border: 1px solid;
     border-color: #D0D6DB;
+}
+
+@mixin input-3-style {
+    margin-top: 12px;
+    @include min-width-div();
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #6C757D;
+    color: white;
+    font-family: Roboto;
+    font-size: medium;
+    border: 1px solid #6C757D;
+    border-radius: 5px;
 }
 
 .w-100 {
@@ -72,9 +94,8 @@ $desktop_resolution: 1308px;
 }
 
 // Mobile
-
 .container {
-    width: 477px;
+    @include container-style(477px, 26px);
 
     .div-1 {
         height: 191px;
@@ -119,37 +140,22 @@ $desktop_resolution: 1308px;
 
             form {
                 @include form-style();
+
                 textarea {
                     @include min-width-div();
                     height: 152px;
                 }
 
                 .input-1 {
-                    margin-top: 10px;
-                    margin-bottom: 19px;
-                    padding: 7px;
-                    font-size: 15px;
-                    @include min-width-div();
-                    border: 1px solid;
-                    border-color: #D0D6DB;
-                    border-radius: 4px;
+                    @include input-1-style();
                 }
 
                 .input-2 {
-                    @include input-2-style();
+                    @include input-2-style(17px);
                 }
 
                 .input-3 {
-                    margin-top: 12px;
-                    @include min-width-div();
-                    padding-top: 10px;
-                    padding-bottom: 10px;
-                    background-color: #6C757D;
-                    color: white;
-                    font-family: Roboto;
-                    font-size: medium;
-                    border: 1px solid #6C757D;
-                    border-radius: 5px;
+                    @include input-3-style();
                 }
             }
         }
@@ -159,8 +165,7 @@ $desktop_resolution: 1308px;
 // Tablet
 @media only screen and (min-width: $tablet_resolution) {
     .container {
-        width: 696px;
-        margin-top: 26px;
+        @include container-style(696px, 26px);
 
         .div-1 {
             height: 280px;
@@ -209,33 +214,16 @@ $desktop_resolution: 1308px;
                     }
 
                     .input-1 {
-                        margin-top: 15px;
-                        margin-bottom: 18px;
-                        padding: 7px;
-                        font-size: 15px;
-                        min-width: -moz-available;
-                        min-width: -webkit-fill-available;
-                        min-width: fill-available;
-                        border: 1px solid;
-                        border-color: #D0D6DB;
+                        @include input-1-style();
 
                     }
 
                     .input-2 {
-                        @include input-2-style();
+                        @include input-2-style(11px);
                     }
 
                     .input-3 {
-                        margin-top: 12px;
-                        @include min-width-div();
-                        padding-top: 10px;
-                        padding-bottom: 10px;
-                        background-color: #6C757D;
-                        color: white;
-                        font-family: Roboto;
-                        font-size: medium;
-                        border: 1px solid #6C757D;
-                        border-radius: 5px;
+                        @include input-3-style();
                     }
                 }
             }
@@ -246,7 +234,7 @@ $desktop_resolution: 1308px;
 // Desktop
 @media only screen and (min-width: $desktop_resolution ) {
     .container {
-        width: 1297px;
+        @include container-style(1297px, 26px);
 
         .div-1 {
             height: 521px;
@@ -271,7 +259,7 @@ $desktop_resolution: 1308px;
                 }
 
                 .content-2 {
-                   @include content-2-style();
+                    @include content-2-style();
                 }
             }
 
@@ -286,40 +274,26 @@ $desktop_resolution: 1308px;
 
                 form {
                     @include form-style();
+
                     textarea {
                         @include min-width-div();
                         height: 160px;
                     }
+
                     .input-1 {
-                        margin-top: 17px;
-                        margin-bottom: 17px;
-                        padding: 7px;
-                        font-size: 15px;
-                        @include min-width-div();
-                        border: 1px solid;
-                        border-color: #D0D6DB;
+                        @include input-1-style();
 
                     }
 
                     .input-2 {
-                        @include input-2-style();
+                        @include input-2-style(11px);
                     }
 
                     .input-3 {
-                        margin-top: 17px;
-                        @include min-width-div();
-                        padding-top: 10px;
-                        padding-bottom: 10px;
-                        background-color: #6C757D;
-                        color: white;
-                        font-family: Roboto;
-                        font-size: medium;
-                        border: 1px solid #6C757D;
-                        border-radius: 5px;
+                        @include input-3-style();
                     }
                 }
             }
         }
     }
-
 }

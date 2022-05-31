@@ -1,11 +1,3 @@
-@font-face {
-  font-family: BadScript;
-  src: url(./assets/Fonts/BadScript-Regular.ttf);
-}
-@font-face {
-  font-family: Roboto;
-  src: url(./assets/Fonts/Roboto-Medium.ttf);
-}
 .m-auto {
   margin: auto;
 }
@@ -14,12 +6,21 @@
   margin-top: 25px;
 }
 
+@font-face {
+  font-family: BadScript;
+  src: url(./assets/Fonts/BadScript-Regular.ttf);
+}
+@font-face {
+  font-family: Roboto;
+  src: url(./assets/Fonts/Roboto-Medium.ttf);
+}
 .w-100 {
   width: 100%;
 }
 
 .container {
   width: 477px;
+  margin-top: 26px;
 }
 .container .div-1 {
   height: 191px;
@@ -156,8 +157,8 @@
     height: 152px;
   }
   .container .div-3 .div-right form .input-1 {
-    margin-top: 15px;
-    margin-bottom: 18px;
+    margin-top: 10px;
+    margin-bottom: 19px;
     padding: 7px;
     font-size: 15px;
     min-width: -moz-available;
@@ -165,6 +166,7 @@
     min-width: fill-available;
     border: 1px solid;
     border-color: #D0D6DB;
+    border-radius: 4px;
   }
   .container .div-3 .div-right form .input-2 {
     margin-top: 11px;
@@ -189,6 +191,7 @@
 @media only screen and (min-width: 1308px) {
   .container {
     width: 1297px;
+    margin-top: 26px;
   }
   .container .div-1 {
     height: 521px;
@@ -236,8 +239,8 @@
     height: 160px;
   }
   .container .div-3 .div-right form .input-1 {
-    margin-top: 17px;
-    margin-bottom: 17px;
+    margin-top: 10px;
+    margin-bottom: 19px;
     padding: 7px;
     font-size: 15px;
     min-width: -moz-available;
@@ -245,6 +248,7 @@
     min-width: fill-available;
     border: 1px solid;
     border-color: #D0D6DB;
+    border-radius: 4px;
   }
   .container .div-3 .div-right form .input-2 {
     margin-top: 11px;
@@ -252,7 +256,7 @@
     border-color: #D0D6DB;
   }
   .container .div-3 .div-right form .input-3 {
-    margin-top: 17px;
+    margin-top: 12px;
     min-width: -moz-available;
     min-width: -webkit-fill-available;
     min-width: fill-available;

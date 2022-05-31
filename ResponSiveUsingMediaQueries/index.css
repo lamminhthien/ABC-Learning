@@ -14,6 +14,12 @@
   font-family: Roboto;
   src: url(./assets/Fonts/Roboto-Medium.ttf);
 }
+.min-width-div {
+  min-width: -moz-available;
+  min-width: -webkit-fill-available;
+  min-width: fill-available;
+}
+
 .w-100 {
   width: 100%;
 }
@@ -62,7 +68,7 @@
   line-height: 26px;
 }
 .container .div-3 .div-right {
-  margin-top: -16px;
+  margin-top: -6px;
 }
 .container .div-3 .div-right img {
   border-radius: 5px;
@@ -73,9 +79,6 @@
   font-family: Roboto;
 }
 .container .div-3 .div-right form textarea {
-  min-width: -moz-available;
-  min-width: -webkit-fill-available;
-  min-width: fill-available;
   height: 152px;
 }
 .container .div-3 .div-right form .input-1 {
@@ -83,9 +86,6 @@
   margin-bottom: 19px;
   padding: 7px;
   font-size: 15px;
-  min-width: -moz-available;
-  min-width: -webkit-fill-available;
-  min-width: fill-available;
   border: 1px solid;
   border-color: #D0D6DB;
   border-radius: 4px;
@@ -97,9 +97,6 @@
 }
 .container .div-3 .div-right form .input-3 {
   margin-top: 12px;
-  min-width: -moz-available;
-  min-width: -webkit-fill-available;
-  min-width: fill-available;
   padding-top: 10px;
   padding-bottom: 10px;
   background-color: #6C757D;
@@ -126,6 +123,9 @@
     font-family: Roboto;
     font-size: medium;
   }
+  .container .div-3 {
+    margin-top: 40px;
+  }
   .container .div-3 .div-left {
     float: left;
     width: 450px;
@@ -137,7 +137,7 @@
     font-size: x-large;
     line-height: 36px;
     font-style: italic;
-    margin-top: -42px;
+    margin-top: -31px;
   }
   .container .div-3 .div-left .content-2 {
     font-family: Roboto;
@@ -152,14 +152,14 @@
     border-radius: 5px;
     height: 145px;
   }
+  .container .div-3 .div-right .img-right {
+    margin-top: 15px;
+  }
   .container .div-3 .div-right form {
     margin-top: 16px;
     font-family: Roboto;
   }
   .container .div-3 .div-right form textarea {
-    min-width: -moz-available;
-    min-width: -webkit-fill-available;
-    min-width: fill-available;
     height: 152px;
   }
   .container .div-3 .div-right form .input-1 {
@@ -167,9 +167,6 @@
     margin-bottom: 19px;
     padding: 7px;
     font-size: 15px;
-    min-width: -moz-available;
-    min-width: -webkit-fill-available;
-    min-width: fill-available;
     border: 1px solid;
     border-color: #D0D6DB;
     border-radius: 4px;
@@ -181,9 +178,6 @@
   }
   .container .div-3 .div-right form .input-3 {
     margin-top: 12px;
-    min-width: -moz-available;
-    min-width: -webkit-fill-available;
-    min-width: fill-available;
     padding-top: 10px;
     padding-bottom: 10px;
     background-color: #6C757D;
@@ -228,8 +222,9 @@
     line-height: 26px;
   }
   .container .div-3 .div-right {
+    margin-top: 10px;
     float: left;
-    width: 218px;
+    width: 306px;
     height: 909px;
   }
   .container .div-3 .div-right img {
@@ -241,9 +236,6 @@
     font-family: Roboto;
   }
   .container .div-3 .div-right form textarea {
-    min-width: -moz-available;
-    min-width: -webkit-fill-available;
-    min-width: fill-available;
     height: 160px;
   }
   .container .div-3 .div-right form .input-1 {
@@ -251,9 +243,6 @@
     margin-bottom: 19px;
     padding: 7px;
     font-size: 15px;
-    min-width: -moz-available;
-    min-width: -webkit-fill-available;
-    min-width: fill-available;
     border: 1px solid;
     border-color: #D0D6DB;
     border-radius: 4px;
@@ -265,9 +254,6 @@
   }
   .container .div-3 .div-right form .input-3 {
     margin-top: 12px;
-    min-width: -moz-available;
-    min-width: -webkit-fill-available;
-    min-width: fill-available;
     padding-top: 10px;
     padding-bottom: 10px;
     background-color: #6C757D;

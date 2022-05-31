@@ -20,7 +20,7 @@ $desktop_resolution: 1308px;
     src: url(./assets/Fonts/Roboto-Medium.ttf);
 }
 
-@mixin min-width-div() {
+.min-width-div {
     min-width: -moz-available;
     min-width: -webkit-fill-available;
     min-width: fill-available;
@@ -51,8 +51,8 @@ $desktop_resolution: 1308px;
 }
 
 @mixin div-right-style($width,$height) {
-    width: 218px;
-    height: 909px;
+    width: $width;
+    height: $height;
 }
 
 @mixin form-style {
@@ -69,7 +69,7 @@ $desktop_resolution: 1308px;
     margin-bottom: 19px;
     padding: 7px;
     font-size: 15px;
-    @include min-width-div();
+    
     border: 1px solid;
     border-color: #D0D6DB;
     border-radius: 4px;
@@ -83,7 +83,7 @@ $desktop_resolution: 1308px;
 
 @mixin input-3-style {
     margin-top: 12px;
-    @include min-width-div();
+    
     padding-top: 10px;
     padding-bottom: 10px;
     background-color: #6C757D;
@@ -142,7 +142,7 @@ $desktop_resolution: 1308px;
         }
 
         .div-right {
-            margin-top: -16px;
+            margin-top: -6px;
 
             img {
                 border-radius: 5px;
@@ -153,7 +153,7 @@ $desktop_resolution: 1308px;
                 @include form-style();
 
                 textarea {
-                    @include min-width-div();
+                    
                     height: 152px;
                 }
 
@@ -191,6 +191,7 @@ $desktop_resolution: 1308px;
         }
 
         .div-3 {
+            margin-top: 40px;
             .div-left {
                 @include float-left();
                 width: 450px;
@@ -198,7 +199,7 @@ $desktop_resolution: 1308px;
                 margin-right: 26px;
 
                 .content-1 {
-                    @include content-1-style(-42px);
+                    @include content-1-style(-31px);
                 }
 
                 .content-2 {
@@ -214,11 +215,15 @@ $desktop_resolution: 1308px;
                     height: 145px;
                 }
 
+                .img-right {
+                    margin-top: 15px
+                }
+
                 form {
                     @include form-style();
 
                     textarea {
-                        @include min-width-div();
+                        
                         height: 152px;
                     }
 
@@ -274,6 +279,7 @@ $desktop_resolution: 1308px;
             }
 
             .div-right {
+                margin-top: 10px;
                 @include float-left();
                 @include div-right-style(306px,909px);
                 img {
@@ -283,15 +289,12 @@ $desktop_resolution: 1308px;
 
                 form {
                     @include form-style();
-
                     textarea {
-                        @include min-width-div();
                         height: 160px;
                     }
 
                     .input-1 {
                         @include input-1-style();
-
                     }
 
                     .input-2 {

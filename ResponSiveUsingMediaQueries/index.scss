@@ -1,6 +1,6 @@
 // Resolution
 $tablet_resolution: 768px;
-$desktop_resolution: 992px;
+$desktop_resolution: 1308px;
 
 @font-face {
     font-family: BadScript;
@@ -12,25 +12,7 @@ $desktop_resolution: 992px;
     src: url(./assets/Fonts/Roboto-Medium.ttf);
 }
 
-
-@mixin desktop_bg {
-    background: rgb(34, 193, 195);
-    background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
-}
-
-@mixin tablet_bg {
-    background-color: #FBAB7E;
-    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
-
-}
-
-@mixin mobile_bg {
-    background-color: #00DBDE;
-    background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
-
-}
-
-.mt-auto {
+.m-auto {
     margin: auto;
 }
 
@@ -51,14 +33,15 @@ $desktop_resolution: 992px;
     float: left;
 }
 
+.w-100 {
+    width: 100%;
+}
 
+// Mobile
 .container {
-
-    // Mobile
+    width: 477px;
     .div-1 {
-        width: 477px;
         height: 191px;
-
         img {
             width: inherit;
             height: inherit;
@@ -66,28 +49,21 @@ $desktop_resolution: 992px;
         }
     }
 
-    .div-2 {    
-        width: 477px;
+    .div-2 {
         margin-left: auto;
         margin-right: auto;
         margin-top: 2px;
-
         .title {
             width: fit-content;
-            margin: auto;
             font-family: Roboto;
-            font-size: medium;            
+            font-size: medium;
         }
     }
 
     .div-3 {
-        width: 477px;
         margin-top: 48px;
-
         .div-left {
-            width: 477px;
             margin-right: 26px;
-
             .content-1 {
                 font-family: BadScript;
                 font-size: x-large;
@@ -103,20 +79,14 @@ $desktop_resolution: 992px;
         }
 
         .div-right {
-            width: 477px;
             margin-top: -16px;
             img {
                 border-radius: 5px;
                 height: 153px;
             }
-            img:nth-child(2) {
-                @include ml-12px();
-            }
-
             form {
                 margin-top: 16px;
                 font-family: Roboto;
-
                 textarea {
                     min-width: -moz-available;
                     min-width: -webkit-fill-available;
@@ -162,30 +132,27 @@ $desktop_resolution: 992px;
             }
         }
     }
+}
 
-    // Tablet
-    @media only screen and (min-width: $tablet_resolution) {
+
+// Tablet
+@media only screen and (min-width: $tablet_resolution) {
+    .container {
+        width: 696px;
+        margin-top: 26px;
         .div-1 {
-            width: 696px;
             height: 280px;
         }
-
         .div-2 {
-            width: 696px;
             margin: 20px auto 27px;
-
             .title {
                 width: fit-content;
-                margin: auto;
                 font-family: Roboto;
                 font-size: larger;
             }
         }
 
         .div-3 {
-            width: 696px;
-            background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
-
             .div-left {
                 @include float-left();
                 width: 450px;
@@ -265,27 +232,27 @@ $desktop_resolution: 992px;
         }
     }
 
-    // Desktop
-    @media only screen and (min-width: $desktop_resolution) {
+
+}
+
+// Desktop
+@media only screen and (min-width: $desktop_resolution ) {
+    .container {
+        width: 1297px;
         .div-1 {
-            width: 1297px;
             height: 521px;
         }
 
         .div-2 {
-            width: 1297px;
             margin: 20px auto 27px;
-
             .title {
                 width: fit-content;
-                margin: auto;
                 font-family: Roboto;
                 font-size: larger;
             }
         }
 
         .div-3 {
-            width: 1297px;
 
             .div-left {
                 width: 964px;
@@ -363,4 +330,5 @@ $desktop_resolution: 992px;
             }
         }
     }
+
 }

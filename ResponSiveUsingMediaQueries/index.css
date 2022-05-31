@@ -205,6 +205,7 @@
     font-size: medium;
   }
   .container .div-3 .div-left {
+    float: left;
     width: 964px;
     height: 1109px;
     margin-right: 23px;
@@ -221,7 +222,8 @@
     line-height: 26px;
   }
   .container .div-3 .div-right {
-    width: 306px;
+    float: left;
+    width: 218px;
     height: 909px;
   }
   .container .div-3 .div-right img {

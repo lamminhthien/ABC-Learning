@@ -40,5 +40,13 @@
 .container .box .box-3-parent .box-3 {
   align-self: end;
 }
+.container .box .box-4-parent {
+  width: 100%;
+  justify-content: end;
+  display: flex;
+}
+.container .box .box-4-parent .box-4 {
+  align-self: center;
+}
 
 /*# sourceMappingURL=index.css.map */

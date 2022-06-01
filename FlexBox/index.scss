@@ -38,5 +38,14 @@
         align-self: end;
       }
     }
+
+    .box-4-parent {
+      width: 100%;
+      justify-content: end;
+      display: flex;
+      .box-4 {
+        align-self: center;
+      }
+    }
   }
 }

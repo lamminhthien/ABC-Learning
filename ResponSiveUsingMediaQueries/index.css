@@ -209,7 +209,6 @@
     float: left;
     width: 70%;
     height: 1109px;
-    margin-right: 23px;
   }
   .container .content .left .content-1 {
     font-family: BadScript;
@@ -223,7 +222,6 @@
     line-height: 26px;
   }
   .container .content .right {
-    margin-top: 10px;
     float: left;
     width: 28.2%;
     height: 909px;

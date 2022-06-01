@@ -272,7 +272,6 @@ $desktop_resolution: 1308px;
                 @include float-left();
                 width: 70%;
                 height: 1109px;
-                margin-right: 23px;
 
                 .content-1 {
                     @include content-1-style(-39px);
@@ -284,7 +283,6 @@ $desktop_resolution: 1308px;
             }
 
             .right {
-                margin-top: 10px;
                 @include float-left();
                 @include right-style(28.2%,909px);
                 img {

@@ -1,0 +1,12 @@
+{
+  "name": "FlexBox",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start":   "sass --watch index.scss index.css"
+  },
+  "devDependencies": {
+    "sass": "^1.52.1"
+  }
+}

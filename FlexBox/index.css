@@ -1,0 +1,20 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1150px;
+  height: 900px;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+.container .box {
+  background-color: #D0E2FF;
+  width: 250px;
+  height: 300px;
+  border: 2px solid #B6D4FD;
+  border-radius: 8px;
+}
+
+/*# sourceMappingURL=index.css.map */

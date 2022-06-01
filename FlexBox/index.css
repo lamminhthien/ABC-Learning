@@ -6,20 +6,22 @@
   border-radius: 8px;
 }
 
+.d-flex {
+  display: flex;
+}
+
 .container {
   width: 1150px;
   height: 900px;
   margin: 30px auto;
-  display: flex;
   justify-content: space-evenly;
 }
 .container .box {
   background-color: #d0e2ff;
-  width: 250px;
-  height: 300px;
+  width: 234px;
+  height: 266px;
   border: 2px solid #b6d4fd;
   padding: 30px;
-  display: flex;
 }
 .container .box .box-child {
   width: 90px;
@@ -35,7 +37,6 @@
 .container .box .box-3-parent {
   width: 100%;
   justify-content: end;
-  display: flex;
 }
 .container .box .box-3-parent .box-3 {
   align-self: end;
@@ -43,7 +44,6 @@
 .container .box .box-4-parent {
   width: 100%;
   justify-content: end;
-  display: flex;
 }
 .container .box .box-4-parent .box-4 {
   align-self: center;

@@ -2,12 +2,6 @@
   box-sizing: border-box;
 }
 
-.clearfix::after {
-  display: block;
-  content: '';
-  clear: both;
-}
-
 @font-face {
   font-family: BadScript;
   src: url(./assets/Fonts/BadScript-Regular.ttf);
@@ -18,44 +12,90 @@
   src: url(./assets/Fonts/Roboto-Medium.ttf);
 }
 
+.clearfix::after {
+  display: block;
+  content: '';
+  clear: both;
+}
+
+.mt25-px {
+  margin: 25px auto;
+}
+
+.banner {
+  background-image: url(./assets/Images/banner.png);
+  background-position: center center;
+  border-radius: 15px;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 2.5rem;
+  font-family: Roboto;
+  text-align: center;
+}
+
+p {
+  font-family: Roboto;
+  line-height: 26px;
+  margin-top: 0px;
+}
+.BadScript {
+  font-family: BadScript;
+  font-size: x-large;
+  line-height: 36px;
+  font-style: italic;
+}
+
+.form {
+  margin-top: 10px;
+  font-family: Roboto;
+  .email {
+    margin-top: 10px;
+    margin-bottom: 19px;
+    padding: 7px;
+    font-size: 15px;
+    border: 1px solid;
+    border-color: #d0d6db;
+    border-radius: 4px;
+  }
+  input,
+  textarea {
+    width: 100%;
+  }
+  textarea {
+    margin-top: 13px;
+    height: 158px;
+    border: 1px solid;
+    border-color: #d0d6db;
+    border-radius: 4px;
+  }
+  .submit {
+    margin-top: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #6c757d;
+    color: white;
+    font-family: Roboto;
+    font-size: medium;
+    border: 1px solid #6c757d;
+    border-radius: 5px;
+  }
+}
+
 //TODO DESKTOP
 @media (min-width: 1340px) and (max-width: 1920px) {
   .container {
     max-width: 1296px;
-    margin-top: 25px;
-    margin: auto;
   }
   .banner {
-    background-color: aqua;
     height: 400px;
-    background-image: url(./assets/Images/banner.png);
-    background-position: center center;
-    border-radius: 15px;
-  }
-  .heading {
-    h1 {
-      font-weight: bold;
-      font-size: 2rem;
-      font-family: Roboto;
-      text-align: center;
-    }
   }
   .content {
     .text {
       padding-right: 25px;
       float: left;
       width: 76%;
-    }
-    p {
-      font-family: Roboto;
-      line-height: 26px;
-      margin-top: 0px;
-    }
-    .BadScript {
-      font-family: BadScript;
-      font-size: x-large;
-      line-height: 36px;
-      font-style: italic;
     }
     .sidebar {
       float: right;
@@ -69,41 +109,6 @@
           margin-top: 15px;
         }
       }
-      .form {
-        margin-top: 10px;
-        font-family: Roboto;
-        .email {
-          margin-top: 10px;
-          margin-bottom: 19px;
-          padding: 7px;
-          font-size: 15px;
-          border: 1px solid;
-          border-color: #d0d6db;
-          border-radius: 4px;
-        }
-        input,
-        textarea {
-          width: 100%;
-        }
-        textarea {
-          margin-top: 13px;
-          height: 158px;
-          border: 1px solid;
-          border-color: #d0d6db;
-          border-radius: 4px;
-        }
-        .submit {
-          margin-top: 15px;
-          padding-top: 10px;
-          padding-bottom: 10px;
-          background-color: #6c757d;
-          color: white;
-          font-family: Roboto;
-          font-size: medium;
-          border: 1px solid #6c757d;
-          border-radius: 5px;
-        }
-      }
     }
   }
 }
@@ -112,23 +117,9 @@
 @media screen and (min-width: 768px) and (max-width: 1339px) {
   .container {
     max-width: 1120px;
-    margin-top: 25px;
-    margin: auto;
   }
   .banner {
-    background-color: aqua;
     height: 400px;
-    background-image: url(./assets/Images/banner.png);
-    background-position: center center;
-    border-radius: 15px;
-  }
-  .heading {
-    h1 {
-      font-weight: bold;
-      font-size: 2rem;
-      font-family: Roboto;
-      text-align: center;
-    }
   }
   .content {
     .text {
@@ -136,62 +127,16 @@
       padding-right: 25px;
       width: 80.6%;
     }
-    p {
-      font-family: Roboto;
-      line-height: 26px;
-      margin-top: 0px;
-    }
-    .BadScript {
-      font-family: BadScript;
-      font-size: x-large;
-      line-height: 36px;
-      font-style: italic;
-    }
     .sidebar {
       float: right;
       width: 19.4%;
       .gallery {
         img {
-            border-radius: 5px;
-            width: 100%;
-          }
-          .img-second {
-            margin-top: 15px;
-          }
-      }
-      .form {
-        margin-top: 10px;
-        font-family: Roboto;
-        .email {
-          margin-top: 10px;
-          margin-bottom: 19px;
-          padding: 7px;
-          font-size: 15px;
-          border: 1px solid;
-          border-color: #d0d6db;
-          border-radius: 4px;
-        }
-        input,
-        textarea {
+          border-radius: 5px;
           width: 100%;
         }
-        textarea {
-          margin-top: 13px;
-          height: 158px;
-          border: 1px solid;
-          border-color: #d0d6db;
-          border-radius: 4px;
-        }
-        .submit {
+        .img-second {
           margin-top: 15px;
-          padding-top: 10px;
-          padding-bottom: 10px;
-          background-color: #6c757d;
-          color: white;
-          font-family: Roboto;
-          font-size: medium;
-          border: 1px solid #6c757d;
-          border-radius: 5px;
         }
       }
     }
@@ -202,39 +147,13 @@
 @media screen and (max-width: 767px) {
   .container {
     max-width: 100%;
-    margin-top: 25px;
-    margin: auto;
   }
   .banner {
-    background-color: aqua;
     height: 192px;
-    background-image: url(./assets/Images/banner.png);
-    background-position: center center;
-    border-radius: 15px;
-  }
-  .heading {
-    margin-top: 17px;
-    h1 {
-      font-weight: bold;
-      font-size: 2rem;
-      font-family: Roboto;
-      text-align: center;
-    }
   }
   .content {
     .text {
       width: 100%;
-    }
-    p {
-      font-family: Roboto;
-      line-height: 26px;
-      margin-top: 0px;
-    }
-    .BadScript {
-      font-family: BadScript;
-      font-size: x-large;
-      line-height: 36px;
-      font-style: italic;
     }
     .sidebar {
       width: 100%;
@@ -248,41 +167,6 @@
           padding: 8px;
           width: 50%;
           border-radius: 13px;
-        }
-      }
-      .form {
-        margin-top: 10px;
-        font-family: Roboto;
-        .email {
-          margin-top: 10px;
-          margin-bottom: 19px;
-          padding: 7px;
-          font-size: 15px;
-          border: 1px solid;
-          border-color: #d0d6db;
-          border-radius: 4px;
-        }
-        input,
-        textarea {
-          width: 100%;
-        }
-        textarea {
-          margin-top: 13px;
-          height: 158px;
-          border: 1px solid;
-          border-color: #d0d6db;
-          border-radius: 4px;
-        }
-        .submit {
-          margin-top: 15px;
-          padding-top: 10px;
-          padding-bottom: 10px;
-          background-color: #6c757d;
-          color: white;
-          font-family: Roboto;
-          font-size: medium;
-          border: 1px solid #6c757d;
-          border-radius: 5px;
         }
       }
     }

@@ -270,7 +270,7 @@ $desktop_resolution: 1308px;
         .content {
             .left {
                 @include float-left();
-                width: 70%;
+                width: 75%;
                 height: 1109px;
 
                 .content-1 {
@@ -284,7 +284,7 @@ $desktop_resolution: 1308px;
 
             .right {
                 @include float-left();
-                @include right-style(28.2%,909px);
+                @include right-style(25%,909px);
                 img {
                     width: 100%;
                     border-radius: 5px;

@@ -108,7 +108,7 @@ $desktop_resolution: 1308px;
 .container {
     @include container-style(477px, 26px);
 
-    .div-1 {
+    .banner {
         height: 191px;
 
         img {
@@ -178,7 +178,7 @@ $desktop_resolution: 1308px;
     .container {
         @include container-style(696px, 26px);
 
-        .div-1 {
+        .banner {
             height: 280px;
         }
 
@@ -250,7 +250,7 @@ $desktop_resolution: 1308px;
     .container {
         @include container-style(1297px, 26px);
 
-        .div-1 {
+        .banner {
             height: 521px;
         }
 

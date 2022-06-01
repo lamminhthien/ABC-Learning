@@ -34,10 +34,10 @@
   width: 477px;
   margin-top: 26px;
 }
-.container .div-1 {
+.container .banner {
   height: 191px;
 }
-.container .div-1 img {
+.container .banner img {
   width: inherit;
   height: inherit;
   border-radius: 15px;
@@ -112,7 +112,7 @@
     width: 696px;
     margin-top: 26px;
   }
-  .container .div-1 {
+  .container .banner {
     height: 280px;
   }
   .container .div-2 {
@@ -193,7 +193,7 @@
     width: 1297px;
     margin-top: 26px;
   }
-  .container .div-1 {
+  .container .banner {
     height: 521px;
   }
   .container .div-2 {

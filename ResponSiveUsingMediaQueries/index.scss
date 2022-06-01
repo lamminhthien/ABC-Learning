@@ -10,6 +10,10 @@ $desktop_resolution: 1308px;
     margin-top: 25px;
 }
 
+.mt-15px {
+    margin-top: 15px;
+}
+
 @font-face {
     font-family: BadScript;
     src: url(./assets/Fonts/BadScript-Regular.ttf);
@@ -96,6 +100,10 @@ $desktop_resolution: 1308px;
 
 .w-100 {
     width: 100%;
+}
+
+.pr-15px {
+    padding-right: 15px
 }
 
 
@@ -187,15 +195,18 @@ $desktop_resolution: 1308px;
         .content {
             margin-top: 40px;
             .left {
+                
                 @include float-left();
                 width: 70%;
                 height: 1109px;
 
                 .content-1 {
+                    padding-right: 25px;
                     @include content-1-style(-31px);
                 }
 
                 .content-2 {
+                    padding-right: 25px;
                     @include content-2-style();
                 }
             }

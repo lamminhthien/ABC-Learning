@@ -6,6 +6,10 @@
   margin-top: 25px;
 }
 
+.mt-15px {
+  margin-top: 15px;
+}
+
 @font-face {
   font-family: BadScript;
   src: url(./assets/Fonts/BadScript-Regular.ttf);
@@ -22,6 +26,10 @@
 
 .w-100 {
   width: 100%;
+}
+
+.pr-15px {
+  padding-right: 15px;
 }
 
 .container {
@@ -123,6 +131,7 @@
     height: 1109px;
   }
   .container .content .left .content-1 {
+    padding-right: 25px;
     font-family: BadScript;
     font-size: x-large;
     line-height: 36px;
@@ -130,6 +139,7 @@
     margin-top: -31px;
   }
   .container .content .left .content-2 {
+    padding-right: 25px;
     font-family: Roboto;
     line-height: 26px;
   }

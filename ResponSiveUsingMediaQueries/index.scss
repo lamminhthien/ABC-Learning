@@ -137,8 +137,13 @@
     .sidebar {
       width: 100%;
       .gallery {
+          .inner {
+              margin-left: -5px;
+              margin-right:-5px
+          }
         img {
-          float:left;
+          float: left;
+          padding: 5px;
           width: 50%;
         }
       }

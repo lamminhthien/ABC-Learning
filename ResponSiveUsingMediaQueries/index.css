@@ -129,8 +129,13 @@
   .content .sidebar {
     width: 100%;
   }
+  .content .sidebar .gallery .inner {
+    margin-left: -5px;
+    margin-right: -5px;
+  }
   .content .sidebar .gallery img {
     float: left;
+    padding: 5px;
     width: 50%;
   }
   .content .sidebar .form {

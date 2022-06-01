@@ -2,19 +2,35 @@
   box-sizing: border-box;
 }
 
+.rounded-8px {
+  border-radius: 8px;
+}
+
 .container {
   width: 1150px;
   height: 900px;
-  margin: auto;
+  margin: 30px auto;
   display: flex;
   justify-content: space-evenly;
 }
 .container .box {
-  background-color: #D0E2FF;
+  background-color: #d0e2ff;
   width: 250px;
   height: 300px;
-  border: 2px solid #B6D4FD;
-  border-radius: 8px;
+  border: 2px solid #b6d4fd;
+  padding: 30px;
+  display: flex;
+}
+.container .box .box-child {
+  width: 90px;
+  height: 90px;
+  background-color: #777777;
+}
+.container .box .box-1 {
+  align-self: end;
+}
+.container .box .box-2 {
+  align-self: center;
 }
 
 /*# sourceMappingURL=index.css.map */

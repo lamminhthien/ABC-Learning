@@ -1,0 +1,10 @@
+- Sử dụng max-width (parent-div) kết hợp với width(child-div) để tự động
+căn lề nội dung và không cho hiện thanh cuộn ngang
+- Sử dụng background làm nền và chỉnh vị tri fill hình ảnh luôn có trọng
+tâm chính giữa (trục x,y) bằng background-position: center center
+- Học cách phân tích cấu trúc của bài responsive từ desktop trước rồi từ từ
+đến mobile
+- Phân tích bố cục của trang web, xong mới chia tỉ lệ %width trước, xong mới làm
+nội dung sau, chỉnh border , margin cuối cùng,...
+- Cấu hình vscode-config và prettier extension để tab-indent khi format không bị quá dài
+-

@@ -1,316 +1,57 @@
-// Resolution
-$tablet_resolution: 768px;
-$desktop_resolution: 1308px;
-
-.m-auto {
-    margin: auto;
+* {
+    box-sizing: border-box;
 }
 
-.mt-25px {
-    margin-top: 25px;
+.clearfix::after {
+    display: block;
+    content: "";
+    clear: both;
 }
 
-.mt-15px {
-    margin-top: 15px;
-}
-
-@font-face {
-    font-family: BadScript;
-    src: url(./assets/Fonts/BadScript-Regular.ttf);
-}
-
-@font-face {
-    font-family: Roboto;
-    src: url(./assets/Fonts/Roboto-Medium.ttf);
-}
-
-.min-width-div {
-    min-width: -moz-available;
-    min-width: -webkit-fill-available;
-    min-width: fill-available;
-}
-
-@mixin container-style($width, $margin-top) {
-    width: $width;
-    margin-top: $margin-top;
-}
-
-@mixin title-style {
-    width: fit-content;
-    font-family: Roboto;
-    font-size: medium;
-}
-
-@mixin content-1-style($margin-top) {
-    font-family: BadScript;
-    font-size: x-large;
-    line-height: 36px;
-    font-style: italic;
-    margin-top: $margin-top;
-}
-
-@mixin content-2-style {
-    font-family: Roboto;
-    line-height: 26px;
-}
-
-@mixin right-style($width,$height) {
-    width: $width;
-    height: $height;
-}
-
-@mixin form-style {
-    margin-top: 16px;
-    font-family: Roboto;
-}
-
-@mixin float-left() {
-    float: left;
-}
-
-@mixin input-1-style() {
-    margin-top: 10px;
-    margin-bottom: 19px;
-    padding: 7px;
-    font-size: 15px;
-    
-    border: 1px solid;
-    border-color: #D0D6DB;
-    border-radius: 4px;
-}
-
-@mixin input-2-style($margin-top) {
-    margin-top: 11px;
-    border: 1px solid;
-    border-color: #D0D6DB;
-    border-radius: 4px;
-}
-
-@mixin input-3-style {
-    margin-top: 12px;
-    
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background-color: #6C757D;
-    color: white;
-    font-family: Roboto;
-    font-size: medium;
-    border: 1px solid #6C757D;
-    border-radius: 5px;
-}
-
-.w-100 {
-    width: 100%;
-}
-
-.pr-15px {
-    padding-right: 15px
-}
-
-
-
-// Mobile
-.container {
-    @include container-style(477px, 26px);
-
+@media screen and (max-width:1920px)  {
+    .container {
+        max-width: 1296px;
+        margin-top:25px;
+        margin: auto;
+    }
     .banner {
-        height: 191px;
-
-        img {
-            width: inherit;
-            height: inherit;
-            border-radius: 15px;
-        }
+        background-color: aqua;
+        height: 400px;
+        background-image: url(./assets/Images/banner.png);
+        background-position: center center;
     }
-
     .heading {
-        margin-top: 2px;
-
-        .title {
-            @include title-style();
+        background-color: red;
+        h1{
+            text-align: center;
         }
     }
-
     .content {
-        margin-top: 48px;
-
-        .left {
-            .content-1 {
-                @include content-1-style(-23px);
-            }
-
-            .content-2 {
-                @include content-2-style();
-            }
+        .text {
+            float:left;
+            height: 400px;
+            width: 76%;
         }
-
-        .right {
-            margin-top: -6px;
-
-            img {
-                border-radius: 5px;
-                height: 153px;
-            }
-
-            form {
-                @include form-style();
-
-                textarea {
-                    
-                    height: 152px;
-                }
-
-                .input-1 {
-                    @include input-1-style();
-                }
-
-                .input-2 {
-                    @include input-2-style(17px);
-                }
-
-                .input-3 {
-                    @include input-3-style();
-                }
-            }
+        p{
+            margin-top:0px
         }
-    }
-}
-
-// Tablet
-@media only screen and (min-width: $tablet_resolution) {
-    .container {
-        @include container-style(93%, 26px);
-
-        .banner {
-            height: 280px;
-        }
-
-        .heading {
-            margin: 20px auto 27px;
-
-            .title {
-                @include title-style();
-            }
-        }
-
-        .content {
-            margin-top: 40px;
-            .left {
-                
-                @include float-left();
-                width: 70%;
-                height: 1109px;
-
-                .content-1 {
-                    padding-right: 25px;
-                    @include content-1-style(-31px);
-                }
-
-                .content-2 {
-                    padding-right: 25px;
-                    @include content-2-style();
-                }
-            }
-
-            .right {
-                @include float-left();
-                @include right-style(30%,909px);
+        .sidebar {
+            float:right;
+            height: 400px;
+            width: 24%;
+            .gallery {
                 img {
                     width: 100%;
-                    border-radius: 5px;
-                    height: 145px;
-                }
-
-                .img-right {
-                    margin-top: 15px
-                }
-
-                form {
-                    @include form-style();
-
-                    textarea {
-                        
-                        height: 152px;
-                    }
-
-                    .input-1 {
-                        @include input-1-style();
-
-                    }
-
-                    .input-2 {
-                        @include input-2-style(11px);
-                    }
-
-                    .input-3 {
-                        @include input-3-style();
-                    }
                 }
             }
-        }
-    }
-}
-
-// Desktop
-@media only screen and (min-width: $desktop_resolution ) {
-    .container {
-        @include container-style(1297px, 26px);
-
-        .banner {
-            height: 521px;
-        }
-
-        .heading {
-            margin: 20px auto 27px;
-
-            .title {
-                @include title-style();
-            }
-        }
-
-        .content {
-            .left {
-                @include float-left();
-                width: 75%;
-                height: 1109px;
-
-                .content-1 {
-                    @include content-1-style(-39px);
-                }
-
-                .content-2 {
-                    @include content-2-style();
-                }
-            }
-
-            .right {
-                @include float-left();
-                @include right-style(25%,909px);
-                img {
+            .form {
+                input, textarea {
                     width: 100%;
-                    border-radius: 5px;
-                    height: 203px;
-                }
-
-                form {
-                    @include form-style();
-                    textarea {
-                        height: 160px;
-                    }
-
-                    .input-1 {
-                        @include input-1-style();
-                    }
-
-                    .input-2 {
-                        @include input-2-style(11px);
-                    }
-
-                    .input-3 {
-                        @include input-3-style();
-                    }
                 }
             }
         }
     }
+    
+
 }
+

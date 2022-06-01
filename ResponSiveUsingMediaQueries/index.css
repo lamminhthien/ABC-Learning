@@ -24,12 +24,6 @@
   width: 100%;
 }
 
-@media only screen and (max-width: 767px) {
-  .img-right {
-    margin-left: 13px;
-  }
-}
-
 .container {
   width: 477px;
   margin-top: 26px;
@@ -52,9 +46,6 @@
 }
 .container .content {
   margin-top: 48px;
-}
-.container .content .left {
-  margin-right: 26px;
 }
 .container .content .left .content-1 {
   font-family: BadScript;
@@ -109,7 +100,7 @@
 
 @media only screen and (min-width: 768px) {
   .container {
-    width: 90%;
+    width: 93%;
     margin-top: 26px;
   }
   .container .banner {
@@ -130,7 +121,6 @@
     float: left;
     width: 70%;
     height: 1109px;
-    margin-right: 26px;
   }
   .container .content .left .content-1 {
     font-family: BadScript;
@@ -145,7 +135,7 @@
   }
   .container .content .right {
     float: left;
-    width: 27%;
+    width: 30%;
     height: 909px;
   }
   .container .content .right img {

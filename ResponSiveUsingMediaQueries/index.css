@@ -109,7 +109,7 @@
 
 @media only screen and (min-width: 768px) {
   .container {
-    width: 696px;
+    width: 90%;
     margin-top: 26px;
   }
   .container .banner {
@@ -128,7 +128,7 @@
   }
   .container .content .left {
     float: left;
-    width: 450px;
+    width: 70%;
     height: 1109px;
     margin-right: 26px;
   }
@@ -145,10 +145,11 @@
   }
   .container .content .right {
     float: left;
-    width: 218px;
+    width: 27%;
     height: 909px;
   }
   .container .content .right img {
+    width: 100%;
     border-radius: 5px;
     height: 145px;
   }
@@ -206,7 +207,7 @@
   }
   .container .content .left {
     float: left;
-    width: 964px;
+    width: 70%;
     height: 1109px;
     margin-right: 23px;
   }
@@ -224,10 +225,11 @@
   .container .content .right {
     margin-top: 10px;
     float: left;
-    width: 306px;
+    width: 28.2%;
     height: 909px;
   }
   .container .content .right img {
+    width: 100%;
     border-radius: 5px;
     height: 203px;
   }

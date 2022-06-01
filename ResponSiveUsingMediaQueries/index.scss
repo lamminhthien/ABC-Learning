@@ -176,7 +176,7 @@ $desktop_resolution: 1308px;
 // Tablet
 @media only screen and (min-width: $tablet_resolution) {
     .container {
-        @include container-style(696px, 26px);
+        @include container-style(90%, 26px);
 
         .banner {
             height: 280px;
@@ -194,7 +194,7 @@ $desktop_resolution: 1308px;
             margin-top: 40px;
             .left {
                 @include float-left();
-                width: 450px;
+                width: 70%;
                 height: 1109px;
                 margin-right: 26px;
 
@@ -209,8 +209,9 @@ $desktop_resolution: 1308px;
 
             .right {
                 @include float-left();
-                @include right-style(218px,909px);
+                @include right-style(27.0%,909px);
                 img {
+                    width: 100%;
                     border-radius: 5px;
                     height: 145px;
                 }
@@ -265,7 +266,7 @@ $desktop_resolution: 1308px;
         .content {
             .left {
                 @include float-left();
-                width: 964px;
+                width: 70%;
                 height: 1109px;
                 margin-right: 23px;
 
@@ -281,8 +282,9 @@ $desktop_resolution: 1308px;
             .right {
                 margin-top: 10px;
                 @include float-left();
-                @include right-style(306px,909px);
+                @include right-style(28.2%,909px);
                 img {
+                    width: 100%;
                     border-radius: 5px;
                     height: 203px;
                 }

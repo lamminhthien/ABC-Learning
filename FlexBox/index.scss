@@ -17,17 +17,32 @@
 .align-self-center {
   align-self: center;
 }
+
+.align-item-center {
+  align-items: center;
+}
+
 .justify-content-end {
   justify-content: end;
+}
+
+.justify-content-center {
+  justify-content: center;
 }
 
 .w-100 {
   width: 100%;
 }
 
-.container {
+.square {
+  width: 90px;
+  height: 90px;
+  background-color: #777777;
+  border-radius: 8px;
+}
+
+.container-1 {
   width: 1075px;
-  height: 900px;
   margin: 30px auto;
   justify-content: space-evenly;
   .box {
@@ -36,10 +51,14 @@
     height: 266px;
     border: 2px solid #b6d4fd;
     padding: 30px;
-    .box-child {
-      width: 90px;
-      height: 90px;
-      background-color: #777777;
-    }
   }
+}
+
+.container-2 {
+  width: 1025px;
+  height: 251px;
+  margin: 30px auto;
+  background-color: #d0e2ff;
+  border: 2px solid #b6d4fd;
+  border-radius: 8px;
 }

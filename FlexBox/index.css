@@ -18,8 +18,16 @@
   align-self: center;
 }
 
+.justify-content-end {
+  justify-content: end;
+}
+
+.w-100 {
+  width: 100%;
+}
+
 .container {
-  width: 1150px;
+  width: 1075px;
   height: 900px;
   margin: 30px auto;
   justify-content: space-evenly;
@@ -35,14 +43,6 @@
   width: 90px;
   height: 90px;
   background-color: #777777;
-}
-.container .box .box-3-parent {
-  width: 100%;
-  justify-content: end;
-}
-.container .box .box-4-parent {
-  width: 100%;
-  justify-content: end;
 }
 
 /*# sourceMappingURL=index.css.map */

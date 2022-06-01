@@ -1,16 +1,30 @@
 @font-face {
-  font-family: FiraSan;
-  src: url(./assets/Font/FiraSans-Bold.ttf);
+  font-family: FiraSan-Regular;
+  src: url(./assets/Font/FiraSans-Regular.ttf);
+}
+@font-face {
+  font-family: FiraSan-Italic;
+  src: url(./assets/Font/FiraSans-Italic.ttf);
+}
+@font-face {
+  font-family: FiraSan-Bold;
+  src: url(./assets//Font/FiraSans-Bold.ttf);
 }
 .container .title {
   color: red;
 }
-.container .content-1 {
+.container .area-1 .content-1 {
   font-weight: 800;
   font-family: "Dancing Script", cursive;
 }
-.container .content-2 {
-  font-family: FiraSan;
+.container .area-2 .regular {
+  font-family: FiraSan-Regular;
+}
+.container .area-2 .italic {
+  font-family: FiraSan-Italic;
+}
+.container .area-2 .bold {
+  font-family: FiraSan-Bold;
 }
 
 /*# sourceMappingURL=index.css.map */

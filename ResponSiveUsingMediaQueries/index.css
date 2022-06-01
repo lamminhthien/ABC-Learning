@@ -8,7 +8,7 @@
   clear: both;
 }
 
-@media screen and (max-width: 1920px) {
+@media (min-width: 1340px) and (max-width: 1920px) {
   .container {
     max-width: 1296px;
     margin-top: 25px;
@@ -31,7 +31,6 @@
 
   .content .text {
     float: left;
-    height: 400px;
     width: 76%;
   }
   .content p {
@@ -39,14 +38,115 @@
   }
   .content .sidebar {
     float: right;
-    height: 400px;
     width: 24%;
   }
   .content .sidebar .gallery img {
     width: 100%;
   }
-  .content .sidebar .form input, .content .sidebar .form textarea {
+  .content .sidebar .form input,
+.content .sidebar .form textarea {
     width: 100%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1339px) {
+  .container {
+    max-width: 1120px;
+    margin-top: 25px;
+    margin: auto;
+  }
+
+  .banner {
+    background-color: aqua;
+    height: 400px;
+    background-image: url(./assets/Images/banner.png);
+    background-position: center center;
+  }
+
+  .heading {
+    background-color: red;
+  }
+  .heading h1 {
+    text-align: center;
+  }
+
+  .content .text {
+    float: left;
+    width: 80.6%;
+  }
+  .content p {
+    margin-top: 0px;
+  }
+  .content .sidebar {
+    float: right;
+    width: 19.4%;
+  }
+  .content .sidebar .gallery img {
+    width: 100%;
+  }
+  .content .sidebar .form {
+    margin-top: 25px;
+  }
+  .content .sidebar .form .email {
+    margin-top: 17px;
+    margin-bottom: 23px;
+  }
+  .content .sidebar .form input,
+.content .sidebar .form textarea {
+    width: 100%;
+  }
+  .content .sidebar .form textarea {
+    margin-top: 13px;
+    height: 158px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .container {
+    max-width: 100%;
+    margin-top: 25px;
+    margin: auto;
+  }
+
+  .banner {
+    background-color: aqua;
+    height: 400px;
+    background-image: url(./assets/Images/banner.png);
+    background-position: center center;
+  }
+
+  .heading {
+    background-color: red;
+  }
+  .heading h1 {
+    text-align: center;
+  }
+
+  .content .text {
+    width: 100%;
+  }
+  .content p {
+    margin-top: 0px;
+  }
+  .content .sidebar {
+    width: 100%;
+  }
+  .content .sidebar .gallery img {
+    float: left;
+    width: 50%;
+  }
+  .content .sidebar .form {
+    margin-top: 25px;
+  }
+  .content .sidebar .form .email {
+    margin-top: 17px;
+    margin-bottom: 23px;
+  }
+  .content .sidebar .form input,
+.content .sidebar .form textarea {
+    width: 100%;
+  }
+  .content .sidebar .form textarea {
+    margin-top: 13px;
+    height: 158px;
   }
 }
 

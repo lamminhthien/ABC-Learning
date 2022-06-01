@@ -1,57 +1,163 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .clearfix::after {
-    display: block;
-    content: "";
-    clear: both;
+  display: block;
+  content: '';
+  clear: both;
 }
 
-@media screen and (max-width:1920px)  {
-    .container {
-        max-width: 1296px;
-        margin-top:25px;
-        margin: auto;
+//TODO DESKTOP
+@media (min-width: 1340px) and (max-width: 1920px) {
+  .container {
+    max-width: 1296px;
+    margin-top: 25px;
+    margin: auto;
+  }
+  .banner {
+    background-color: aqua;
+    height: 400px;
+    background-image: url(./assets/Images/banner.png);
+    background-position: center center;
+  }
+  .heading {
+    background-color: red;
+    h1 {
+      text-align: center;
     }
-    .banner {
-        background-color: aqua;
-        height: 400px;
-        background-image: url(./assets/Images/banner.png);
-        background-position: center center;
+  }
+  .content {
+    .text {
+      float: left;
+      width: 76%;
     }
-    .heading {
-        background-color: red;
-        h1{
-            text-align: center;
-        }
+    p {
+      margin-top: 0px;
     }
-    .content {
-        .text {
-            float:left;
-            height: 400px;
-            width: 76%;
+    .sidebar {
+      float: right;
+      width: 24%;
+      .gallery {
+        img {
+          width: 100%;
         }
-        p{
-            margin-top:0px
+      }
+      .form {
+        input,
+        textarea {
+          width: 100%;
         }
-        .sidebar {
-            float:right;
-            height: 400px;
-            width: 24%;
-            .gallery {
-                img {
-                    width: 100%;
-                }
-            }
-            .form {
-                input, textarea {
-                    width: 100%;
-                }
-            }
-        }
+      }
     }
-    
-
+  }
 }
 
+// TODO Tablet
+@media screen and (min-width: 768px) and (max-width: 1339px) {
+  .container {
+    max-width: 1120px;
+    margin-top: 25px;
+    margin: auto;
+  }
+  .banner {
+    background-color: aqua;
+    height: 400px;
+    background-image: url(./assets/Images/banner.png);
+    background-position: center center;
+  }
+  .heading {
+    background-color: red;
+    h1 {
+      text-align: center;
+    }
+  }
+  .content {
+    .text {
+      float: left;
+      width: 80.6%;
+    }
+    p {
+      margin-top: 0px;
+    }
+    .sidebar {
+      float: right;
+      width: 19.4%;
+      .gallery {
+        img {
+          width: 100%;
+        }
+      }
+      .form {
+        margin-top: 25px;
+        .email {
+          margin-top: 17px;
+          margin-bottom: 23px;
+        }
+
+        input,
+        textarea {
+          width: 100%;
+        }
+        textarea {
+          margin-top: 13px;
+          height: 158px;
+        }
+      }
+    }
+  }
+}
+
+// TODO Mobile
+@media screen and (max-width: 767px) {
+  .container {
+    max-width: 100%;
+    margin-top: 25px;
+    margin: auto;
+  }
+  .banner {
+    background-color: aqua;
+    height: 400px;
+    background-image: url(./assets/Images/banner.png);
+    background-position: center center;
+  }
+  .heading {
+    background-color: red;
+    h1 {
+      text-align: center;
+    }
+  }
+  .content {
+    .text {
+      width: 100%;
+    }
+    p {
+      margin-top: 0px;
+    }
+    .sidebar {
+      width: 100%;
+      .gallery {
+        img {
+          float:left;
+          width: 50%;
+        }
+      }
+      .form {
+        margin-top: 25px;
+        .email {
+          margin-top: 17px;
+          margin-bottom: 23px;
+        }
+
+        input,
+        textarea {
+          width: 100%;
+        }
+        textarea {
+          margin-top: 13px;
+          height: 158px;
+        }
+      }
+    }
+  }
+}

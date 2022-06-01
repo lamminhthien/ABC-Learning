@@ -8,6 +8,16 @@
   clear: both;
 }
 
+@font-face {
+  font-family: BadScript;
+  src: url(./assets/Fonts/BadScript-Regular.ttf);
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(./assets/Fonts/Roboto-Medium.ttf);
+}
+
 //TODO DESKTOP
 @media (min-width: 1340px) and (max-width: 1920px) {
   .container {
@@ -20,33 +30,78 @@
     height: 400px;
     background-image: url(./assets/Images/banner.png);
     background-position: center center;
+    border-radius: 15px;
   }
   .heading {
-    background-color: red;
     h1 {
+      font-weight: bold;
+      font-size: 2rem;
+      font-family: Roboto;
       text-align: center;
     }
   }
   .content {
     .text {
+      padding-right: 25px;
       float: left;
       width: 76%;
     }
     p {
+      font-family: Roboto;
+      line-height: 26px;
       margin-top: 0px;
+    }
+    .BadScript {
+      font-family: BadScript;
+      font-size: x-large;
+      line-height: 36px;
+      font-style: italic;
     }
     .sidebar {
       float: right;
       width: 24%;
       .gallery {
         img {
+          border-radius: 5px;
           width: 100%;
+        }
+        .img-second {
+          margin-top: 15px;
         }
       }
       .form {
+        margin-top: 10px;
+        font-family: Roboto;
+        .email {
+          margin-top: 10px;
+          margin-bottom: 19px;
+          padding: 7px;
+          font-size: 15px;
+          border: 1px solid;
+          border-color: #d0d6db;
+          border-radius: 4px;
+        }
         input,
         textarea {
           width: 100%;
+        }
+        textarea {
+          margin-top: 13px;
+          height: 158px;
+          border: 1px solid;
+          border-color: #d0d6db;
+          border-radius: 4px;
+        }
+        .submit {
+          margin-top: 15px;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          background-color: #6c757d;
+          color: white;
+          font-family: Roboto;
+          font-size: medium;
+          border: 1px solid #6c757d;
+          border-radius: 5px;
         }
       }
     }
@@ -65,36 +120,57 @@
     height: 400px;
     background-image: url(./assets/Images/banner.png);
     background-position: center center;
+    border-radius: 15px;
   }
   .heading {
-    background-color: red;
     h1 {
+      font-weight: bold;
+      font-size: 2rem;
+      font-family: Roboto;
       text-align: center;
     }
   }
   .content {
     .text {
       float: left;
+      padding-right: 25px;
       width: 80.6%;
     }
     p {
+      font-family: Roboto;
+      line-height: 26px;
       margin-top: 0px;
+    }
+    .BadScript {
+      font-family: BadScript;
+      font-size: x-large;
+      line-height: 36px;
+      font-style: italic;
     }
     .sidebar {
       float: right;
       width: 19.4%;
       .gallery {
         img {
-          width: 100%;
-        }
+            border-radius: 5px;
+            width: 100%;
+          }
+          .img-second {
+            margin-top: 15px;
+          }
       }
       .form {
-        margin-top: 25px;
+        margin-top: 10px;
+        font-family: Roboto;
         .email {
-          margin-top: 17px;
-          margin-bottom: 23px;
+          margin-top: 10px;
+          margin-bottom: 19px;
+          padding: 7px;
+          font-size: 15px;
+          border: 1px solid;
+          border-color: #d0d6db;
+          border-radius: 4px;
         }
-
         input,
         textarea {
           width: 100%;
@@ -102,6 +178,20 @@
         textarea {
           margin-top: 13px;
           height: 158px;
+          border: 1px solid;
+          border-color: #d0d6db;
+          border-radius: 4px;
+        }
+        .submit {
+          margin-top: 15px;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          background-color: #6c757d;
+          color: white;
+          font-family: Roboto;
+          font-size: medium;
+          border: 1px solid #6c757d;
+          border-radius: 5px;
         }
       }
     }
@@ -117,13 +207,17 @@
   }
   .banner {
     background-color: aqua;
-    height: 400px;
+    height: 192px;
     background-image: url(./assets/Images/banner.png);
     background-position: center center;
+    border-radius: 15px;
   }
   .heading {
-    background-color: red;
+    margin-top: 17px;
     h1 {
+      font-weight: bold;
+      font-size: 2rem;
+      font-family: Roboto;
       text-align: center;
     }
   }
@@ -132,28 +226,42 @@
       width: 100%;
     }
     p {
+      font-family: Roboto;
+      line-height: 26px;
       margin-top: 0px;
+    }
+    .BadScript {
+      font-family: BadScript;
+      font-size: x-large;
+      line-height: 36px;
+      font-style: italic;
     }
     .sidebar {
       width: 100%;
       .gallery {
-          .inner {
-              margin-left: -5px;
-              margin-right:-5px
-          }
+        .inner {
+          margin-left: -8px;
+          margin-right: -8px;
+        }
         img {
           float: left;
-          padding: 5px;
+          padding: 8px;
           width: 50%;
+          border-radius: 13px;
         }
       }
       .form {
-        margin-top: 25px;
+        margin-top: 10px;
+        font-family: Roboto;
         .email {
-          margin-top: 17px;
-          margin-bottom: 23px;
+          margin-top: 10px;
+          margin-bottom: 19px;
+          padding: 7px;
+          font-size: 15px;
+          border: 1px solid;
+          border-color: #d0d6db;
+          border-radius: 4px;
         }
-
         input,
         textarea {
           width: 100%;
@@ -161,6 +269,20 @@
         textarea {
           margin-top: 13px;
           height: 158px;
+          border: 1px solid;
+          border-color: #d0d6db;
+          border-radius: 4px;
+        }
+        .submit {
+          margin-top: 15px;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          background-color: #6c757d;
+          color: white;
+          font-family: Roboto;
+          font-size: medium;
+          border: 1px solid #6c757d;
+          border-radius: 5px;
         }
       }
     }

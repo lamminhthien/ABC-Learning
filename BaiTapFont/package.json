@@ -1,0 +1,11 @@
+{
+  "name": "baitapfont",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "sass --watch index.scss index.css "
+  },
+  "author": "",
+  "license": "ISC"
+}

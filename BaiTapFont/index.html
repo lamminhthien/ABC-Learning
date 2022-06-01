@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="title">Google Font (Dancing Script)</h1>
+        <div class="area-1">
+            <h1 id="paragraph" class="content-1"> </h1>
+        </div>
+        <h1 class="title">Local Font (Fira Sans</h1>
+        <div class="area-2">
+            <p id="paragraph" class="content-2"></p>
+            <p id="paragraph" class="content-2"></p>
+            <p id="paragraph" class="content-2"></p>
+        </div>
+    </div>
+    <script>
+        var elements = document.querySelectorAll('#paragraph')
+        elements.forEach(element => {
+            element.innerHTML = `Bầu trời trong xanh, không một gợn mây`
+        });
+    </script>
+</body>
+
+</html>

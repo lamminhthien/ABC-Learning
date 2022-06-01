@@ -1,0 +1,16 @@
+@font-face {
+  font-family: FiraSan;
+  src: url(./assets/Font/FiraSans-Bold.ttf);
+}
+.container .title {
+  color: red;
+}
+.container .content-1 {
+  font-weight: 800;
+  font-family: "Dancing Script", cursive;
+}
+.container .content-2 {
+  font-family: FiraSan;
+}
+
+/*# sourceMappingURL=index.css.map */

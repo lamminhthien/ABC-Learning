@@ -126,7 +126,7 @@ $desktop_resolution: 1308px;
         }
     }
 
-    .div-3 {
+    .content {
         margin-top: 48px;
 
         .div-left {
@@ -190,7 +190,7 @@ $desktop_resolution: 1308px;
             }
         }
 
-        .div-3 {
+        .content {
             margin-top: 40px;
             .div-left {
                 @include float-left();
@@ -262,7 +262,7 @@ $desktop_resolution: 1308px;
             }
         }
 
-        .div-3 {
+        .content {
             .div-left {
                 @include float-left();
                 width: 964px;

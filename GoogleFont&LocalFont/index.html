@@ -1,38 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Font</title>
     <link rel="stylesheet" href="./index.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
     <div class="container">
-        <h1 class="title-dancing">Google Font (Dancing Script)</h1>
-        <div class="box">
-            <h1 id="paragraph" class="content-1"> </h1>
+      <h1 class="title-dancing">Google Font (Dancing Script)</h1>
+      <div class="box box-border">
+        <h1 class="content-1">Bầu trời trong xanh thăm thẳm, không một gợn mây</h1>
+      </div>
+      <h1 class="title-fira">Local Font (Fira Sans)</h1>
+      <div class="box box-border">
+        <div class="inner">
+            <p class="regular m-0px"> Bầu trời trong xanh thăm thẳm, không một gợn mây (Regular). </p>
+            <br />
+            <p class="bold m-0px"> Bầu trời trong xanh thăm thẳm, không một gợn mây (Bold). </p>
+            <br />
+            <p class="italic m-0px"> Bầu trời trong xanh thăm thẳm, không một gợn mây (Italic). </p>
         </div>
-        <h1 class="title-fira">Local Font (Fira Sans)</h1>
-        <div class="box">
-            <span id="paragraph" class="regular"></span>
-            <br/>
-            <span id="paragraph" class="bold"></span>
-            <br/>
-            <span id="paragraph" class="italic"></span>
-        </div>
+      </div>
     </div>
-    <script>
-        var elements = document.querySelectorAll('#paragraph')
-        elements.forEach(element => {
-            element.innerHTML = `Bầu trời trong xanh thăm thẳm, không một gợn mây`
-        });
-    </script>
-</body>
-
+  </body>
 </html>

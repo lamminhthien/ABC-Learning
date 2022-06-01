@@ -53,35 +53,35 @@
 .container .content {
   margin-top: 48px;
 }
-.container .content .div-left {
+.container .content .left {
   margin-right: 26px;
 }
-.container .content .div-left .content-1 {
+.container .content .left .content-1 {
   font-family: BadScript;
   font-size: x-large;
   line-height: 36px;
   font-style: italic;
   margin-top: -23px;
 }
-.container .content .div-left .content-2 {
+.container .content .left .content-2 {
   font-family: Roboto;
   line-height: 26px;
 }
-.container .content .div-right {
+.container .content .right {
   margin-top: -6px;
 }
-.container .content .div-right img {
+.container .content .right img {
   border-radius: 5px;
   height: 153px;
 }
-.container .content .div-right form {
+.container .content .right form {
   margin-top: 16px;
   font-family: Roboto;
 }
-.container .content .div-right form textarea {
+.container .content .right form textarea {
   height: 152px;
 }
-.container .content .div-right form .input-1 {
+.container .content .right form .input-1 {
   margin-top: 10px;
   margin-bottom: 19px;
   padding: 7px;
@@ -90,12 +90,12 @@
   border-color: #D0D6DB;
   border-radius: 4px;
 }
-.container .content .div-right form .input-2 {
+.container .content .right form .input-2 {
   margin-top: 11px;
   border: 1px solid;
   border-color: #D0D6DB;
 }
-.container .content .div-right form .input-3 {
+.container .content .right form .input-3 {
   margin-top: 12px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -126,43 +126,43 @@
   .container .content {
     margin-top: 40px;
   }
-  .container .content .div-left {
+  .container .content .left {
     float: left;
     width: 450px;
     height: 1109px;
     margin-right: 26px;
   }
-  .container .content .div-left .content-1 {
+  .container .content .left .content-1 {
     font-family: BadScript;
     font-size: x-large;
     line-height: 36px;
     font-style: italic;
     margin-top: -31px;
   }
-  .container .content .div-left .content-2 {
+  .container .content .left .content-2 {
     font-family: Roboto;
     line-height: 26px;
   }
-  .container .content .div-right {
+  .container .content .right {
     float: left;
     width: 218px;
     height: 909px;
   }
-  .container .content .div-right img {
+  .container .content .right img {
     border-radius: 5px;
     height: 145px;
   }
-  .container .content .div-right .img-right {
+  .container .content .right .img-right {
     margin-top: 15px;
   }
-  .container .content .div-right form {
+  .container .content .right form {
     margin-top: 16px;
     font-family: Roboto;
   }
-  .container .content .div-right form textarea {
+  .container .content .right form textarea {
     height: 152px;
   }
-  .container .content .div-right form .input-1 {
+  .container .content .right form .input-1 {
     margin-top: 10px;
     margin-bottom: 19px;
     padding: 7px;
@@ -171,12 +171,12 @@
     border-color: #D0D6DB;
     border-radius: 4px;
   }
-  .container .content .div-right form .input-2 {
+  .container .content .right form .input-2 {
     margin-top: 11px;
     border: 1px solid;
     border-color: #D0D6DB;
   }
-  .container .content .div-right form .input-3 {
+  .container .content .right form .input-3 {
     margin-top: 12px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -204,41 +204,41 @@
     font-family: Roboto;
     font-size: medium;
   }
-  .container .content .div-left {
+  .container .content .left {
     float: left;
     width: 964px;
     height: 1109px;
     margin-right: 23px;
   }
-  .container .content .div-left .content-1 {
+  .container .content .left .content-1 {
     font-family: BadScript;
     font-size: x-large;
     line-height: 36px;
     font-style: italic;
     margin-top: -39px;
   }
-  .container .content .div-left .content-2 {
+  .container .content .left .content-2 {
     font-family: Roboto;
     line-height: 26px;
   }
-  .container .content .div-right {
+  .container .content .right {
     margin-top: 10px;
     float: left;
     width: 306px;
     height: 909px;
   }
-  .container .content .div-right img {
+  .container .content .right img {
     border-radius: 5px;
     height: 203px;
   }
-  .container .content .div-right form {
+  .container .content .right form {
     margin-top: 16px;
     font-family: Roboto;
   }
-  .container .content .div-right form textarea {
+  .container .content .right form textarea {
     height: 160px;
   }
-  .container .content .div-right form .input-1 {
+  .container .content .right form .input-1 {
     margin-top: 10px;
     margin-bottom: 19px;
     padding: 7px;
@@ -247,12 +247,12 @@
     border-color: #D0D6DB;
     border-radius: 4px;
   }
-  .container .content .div-right form .input-2 {
+  .container .content .right form .input-2 {
     margin-top: 11px;
     border: 1px solid;
     border-color: #D0D6DB;
   }
-  .container .content .div-right form .input-3 {
+  .container .content .right form .input-3 {
     margin-top: 12px;
     padding-top: 10px;
     padding-bottom: 10px;

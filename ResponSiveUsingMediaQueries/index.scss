@@ -50,7 +50,7 @@ $desktop_resolution: 1308px;
     line-height: 26px;
 }
 
-@mixin div-right-style($width,$height) {
+@mixin right-style($width,$height) {
     width: $width;
     height: $height;
 }
@@ -129,7 +129,7 @@ $desktop_resolution: 1308px;
     .content {
         margin-top: 48px;
 
-        .div-left {
+        .left {
             margin-right: 26px;
 
             .content-1 {
@@ -141,7 +141,7 @@ $desktop_resolution: 1308px;
             }
         }
 
-        .div-right {
+        .right {
             margin-top: -6px;
 
             img {
@@ -192,7 +192,7 @@ $desktop_resolution: 1308px;
 
         .content {
             margin-top: 40px;
-            .div-left {
+            .left {
                 @include float-left();
                 width: 450px;
                 height: 1109px;
@@ -207,9 +207,9 @@ $desktop_resolution: 1308px;
                 }
             }
 
-            .div-right {
+            .right {
                 @include float-left();
-                @include div-right-style(218px,909px);
+                @include right-style(218px,909px);
                 img {
                     border-radius: 5px;
                     height: 145px;
@@ -263,7 +263,7 @@ $desktop_resolution: 1308px;
         }
 
         .content {
-            .div-left {
+            .left {
                 @include float-left();
                 width: 964px;
                 height: 1109px;
@@ -278,10 +278,10 @@ $desktop_resolution: 1308px;
                 }
             }
 
-            .div-right {
+            .right {
                 margin-top: 10px;
                 @include float-left();
-                @include div-right-style(306px,909px);
+                @include right-style(306px,909px);
                 img {
                     border-radius: 5px;
                     height: 203px;

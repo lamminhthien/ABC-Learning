@@ -30,5 +30,13 @@
     .box-2 {
       align-self: center;
     }
+    .box-3-parent {
+      width: 100%;
+      justify-content: end;
+      display: flex;
+      .box-3 {
+        align-self: end;
+      }
+    }
   }
 }

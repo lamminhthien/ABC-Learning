@@ -32,5 +32,13 @@
 .container .box .box-2 {
   align-self: center;
 }
+.container .box .box-3-parent {
+  width: 100%;
+  justify-content: end;
+  display: flex;
+}
+.container .box .box-3-parent .box-3 {
+  align-self: end;
+}
 
 /*# sourceMappingURL=index.css.map */

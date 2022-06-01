@@ -10,6 +10,14 @@
   display: flex;
 }
 
+.align-self-end {
+  align-self: end;
+}
+
+.align-self-center {
+  align-self: center;
+}
+
 .container {
   width: 1150px;
   height: 900px;
@@ -28,25 +36,13 @@
   height: 90px;
   background-color: #777777;
 }
-.container .box .box-1 {
-  align-self: end;
-}
-.container .box .box-2 {
-  align-self: center;
-}
 .container .box .box-3-parent {
   width: 100%;
   justify-content: end;
 }
-.container .box .box-3-parent .box-3 {
-  align-self: end;
-}
 .container .box .box-4-parent {
   width: 100%;
   justify-content: end;
-}
-.container .box .box-4-parent .box-4 {
-  align-self: center;
 }
 
 /*# sourceMappingURL=index.css.map */

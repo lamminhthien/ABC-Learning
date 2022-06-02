@@ -30,6 +30,10 @@
   justify-content: center;
 }
 
+.justify-content-between {
+  justify-content: space-evenly;
+}
+
 .w-100 {
   width: 100%;
 }
@@ -70,6 +74,9 @@
   margin: 30px auto;
   border: 2px solid #b6d4fd;
   border-radius: 8px;
+}
+.container-3 .inner {
+  padding: 14px;
 }
 
 /*# sourceMappingURL=index.css.map */

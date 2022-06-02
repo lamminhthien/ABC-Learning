@@ -46,13 +46,11 @@
   width: 90px;
   height: 90px;
   background-color: #777777;
-  border-radius: 8px;
 }
 
 .container-style {
   background-color: #d0e2ff;
   border: 2px solid #b6d4fd;
-  border-radius: 8px;
   width: 1025px;
   margin: 30px auto;
 }

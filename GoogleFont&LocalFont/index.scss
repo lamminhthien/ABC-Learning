@@ -12,7 +12,7 @@
 @font-face {
   font-family: FiraSan;
   src: url(./assets/Font/FiraSans-Italic.ttf);
-  font-style:italic;
+  font-style: italic;
   font-weight: normal;
 }
 
@@ -24,7 +24,8 @@
 }
 
 .box-border {
-  border: 3px solid #dfdfdf;
+  border: 1px solid #dfdfdf;
+  border-radius: 5px;
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -37,19 +38,18 @@
   margin-bottom: 15px;
 }
 
-.text-3xl {
-  font-size: xx-large;
+.text-30px {
+  font-size: 30px;
 }
 
 .title {
   font-family: Arial, Helvetica, sans-serif;
   color: red;
-  font-size: 30px;
+  font-size: 28px;
 }
 
-
 .container {
-  max-width: 987px;  
+  max-width: 987px;
   margin: 50px auto;
 
   .box {

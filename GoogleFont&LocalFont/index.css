@@ -3,16 +3,22 @@
 }
 
 @font-face {
-  font-family: FiraSan-Regular;
+  font-family: FiraSan;
   src: url(./assets/Font/FiraSans-Regular.ttf);
+  font-style: normal;
+  font-weight: normal;
 }
 @font-face {
-  font-family: FiraSan-Italic;
+  font-family: FiraSan;
   src: url(./assets/Font/FiraSans-Italic.ttf);
+  font-style: italic;
+  font-weight: normal;
 }
 @font-face {
-  font-family: FiraSan-Bold;
+  font-family: FiraSan;
   src: url(./assets//Font/FiraSans-Bold.ttf);
+  font-style: normal;
+  font-weight: bold;
 }
 .box-border {
   border: 3px solid #dfdfdf;
@@ -45,18 +51,20 @@
 }
 .container .box .content-1 {
   font-family: "Dancing Script", cursive;
-  font-size: xxx-large;
+  font-size: 45px;
   margin-top: 20px;
   margin-bottom: 20px;
 }
 .container .regular {
-  font-family: FiraSan-Regular;
+  font-family: FiraSan;
 }
 .container .italic {
-  font-family: FiraSan-Italic;
+  font-family: FiraSan;
+  font-style: italic;
 }
 .container .bold {
-  font-family: FiraSan-Bold;
+  font-family: FiraSan;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=index.css.map */
